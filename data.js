@@ -15,6 +15,6 @@ const entries = [
     date: "2026-01-01",
     mood: "🤍 Worried",
     message: "Hope you're doing okay. Please talk to me if something's wrong. Love you <3",
-    image: "images/2025-09-16.jpg"
+    image: "images/IMG_9296.JPG"
   }
 ];
