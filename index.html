@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="container">
+  <h1>For You ❤️</h1>
+
+  <p id="countdown"></p>
+
+  <section id="entry">
+    <img id="entryImage" alt="">
+    <p id="entryMessage"></p>
+    <span id="entryDate"></span>
+  </section>
+
+  <a href="archive.html">View past days →</a>
+</main>
+
+<script src="data.js"></script>
+<script>
+  const latest = entries[entries.length - 1];
+
+  document.getElementById("entryImage").src = latest.image;
+  document.getElementById("entryMessage").textContent = latest.message;
+  document.getElementById("entryDate").textContent = latest.date;
+
+  function updateCountdown() {
+    const now = new Date();
+    let anniversary = new Date(ANNIVERSARY_DATE);
+    anniversary.setFullYear(now.getFullYear());
+
+    if (anniversary < now) {
+      anniversary.setFullYear(now.getFullYear() + 1);
+    }
+
+    const days = Math.ceil((anniversary - now) / (1000 * 60 * 60 * 24));
+    document.getElementById("countdown").textContent =
+      `💖 ${days} days until our anniversary`;
+  }
+
+  updateCountdown();
+</script>
+
+</body>
+</html>
