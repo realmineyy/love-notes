@@ -1,5 +1,5 @@
 // Change this once
-const ANNIVERSARY_DATE = "2023-06-14";
+const ANNIVERSARY_DATE = "2025-09-15";
 
 // Add new entries to the BOTTOM
 const entries = [
