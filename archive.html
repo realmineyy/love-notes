@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Days</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="container">
+  <h1>Our Days 📖</h1>
+
+  <div class="archive"></div>
+
+  <a href="index.html">← Back</a>
+</main>
+
+<script src="data.js"></script>
+<script>
+  const archive = document.querySelector(".archive");
+
+  entries.slice().reverse().forEach(entry => {
+    const card = document.createElement("div");
+    card.className = "archive-card";
+    card.innerHTML = `
+      <img src="${entry.image}" alt="">
+      <p>${entry.message}</p>
+      <span>${entry.date}</span>
+    `;
+    archive.appendChild(card);
+  });
+</script>
+
+</body>
+</html>
