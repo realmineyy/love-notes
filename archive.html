@@ -25,9 +25,11 @@
     card.className = "archive-card";
     card.innerHTML = `
       <img src="${entry.image}" alt="">
+      <p class="mood">${entry.mood}</p>
       <p>${entry.message}</p>
       <span>${entry.date}</span>
     `;
+
     archive.appendChild(card);
   });
 </script>

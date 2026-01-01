@@ -16,6 +16,7 @@
 
   <section id="entry">
     <img id="entryImage" alt="">
+    <p id="entryMood"></p>
     <p id="entryMessage"></p>
     <span id="entryDate"></span>
   </section>
@@ -28,6 +29,7 @@
   const latest = entries[entries.length - 1];
 
   document.getElementById("entryImage").src = latest.image;
+  document.getElementById("entryMood").textContent = latest.mood;
   document.getElementById("entryMessage").textContent = latest.message;
   document.getElementById("entryDate").textContent = latest.date;
 
