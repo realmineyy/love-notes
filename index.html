@@ -12,6 +12,7 @@
   <h1>For You ❤️</h1>
 
   <p id="countdown"></p>
+  <p id="togetherTime"></p>
 
   <section id="entry">
     <img id="entryImage" alt="">
@@ -33,25 +34,52 @@
   function updateCountdown() {
     const now = new Date();
     let anniversary = new Date(ANNIVERSARY_DATE);
-
-    // Set anniversary to this year
     anniversary.setFullYear(now.getFullYear());
 
-    // If it's already passed this year, use next year
     if (anniversary < now) {
       anniversary.setFullYear(now.getFullYear() + 1);
     }
 
-    const oneDay = 1000 * 60 * 60 * 24;
-    const daysLeft = Math.ceil((anniversary - now) / oneDay);
+    const daysLeft = Math.ceil(
+      (anniversary - now) / (1000 * 60 * 60 * 24)
+    );
 
     document.getElementById("countdown").textContent =
       `💖 ${daysLeft} days until our anniversary`;
   }
 
-  updateCountdown();
+  function updateTogetherTime() {
+    const start = new Date(TOGETHER_SINCE);
+    const now = new Date();
+
+    let years = now.getFullYear() - start.getFullYear();
+    let months = now.getMonth() - start.getMonth();
+    let days = now.getDate() - start.getDate();
+
+    if (days < 0) {
+      months--;
+      const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+      days += prevMonth.getDate();
+    }
+
+    if (months < 0) {
+      years--;
+      months += 12;
+    }
+
+    const diffMs = now - start;
+    const hours = Math.floor(diffMs / (1000 * 60 * 60)) % 24;
+    const minutes = Math.floor(diffMs / (1000 * 60)) % 60;
+
+    document.getElementById("togetherTime").textContent =
+      `⏳ We’ve been together for ${years} years, ${months} months, ${days} days, ${hours} hours, and ${minutes} minutes`;
+  }
 
   updateCountdown();
+  updateTogetherTime();
+
+  // Optional: update time every minute
+  setInterval(updateTogetherTime, 60000);
 </script>
 
 </body>
