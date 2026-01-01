@@ -33,15 +33,23 @@
   function updateCountdown() {
     const now = new Date();
     let anniversary = new Date(ANNIVERSARY_DATE);
+
+    // Set anniversary to this year
     anniversary.setFullYear(now.getFullYear());
 
+    // If it's already passed this year, use next year
     if (anniversary < now) {
       anniversary.setFullYear(now.getFullYear() + 1);
     }
 
-    const days = Math.ceil((anniversary - now) / (1000 * 60 * 60 * 24));
+    const oneDay = 1000 * 60 * 60 * 24;
+    const daysLeft = Math.ceil((anniversary - now) / oneDay);
+
     document.getElementById("countdown").textContent =
-      `💖 ${days} days until our anniversary`;
+      `💖 ${daysLeft} days until our anniversary`;
+  }
+
+  updateCountdown();
   }
 
   updateCountdown();
