@@ -16,5 +16,11 @@ const entries = [
     mood: "🤍 Worried",
     message: "Hope you're doing okay. Please talk to me if something's wrong. Love you <3",
     image: "images/IMG_9296.JPG"
+  },
+  {
+    date: "2026-01-02",
+    mood: "Chillin",
+    message: "Even on quiet days, loving you feels like the easiest thing I've ever done. Thank you for being so amazing!",
+    image: "images/no_image_today.jpg"
   }
 ];
