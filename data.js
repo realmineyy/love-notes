@@ -22,5 +22,11 @@ const entries = [
     mood: "Chillin",
     message: "Even on quiet days, loving you feels like the easiest thing I've ever done. Thank you for being so amazing!",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-03",
+    mood: "Chillin",
+    message: "No matter how today looks, I'm grateful to have you in my life <3",
+    image: "images/no_image_today.jpg"
   }
 ];
