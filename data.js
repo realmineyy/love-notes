@@ -29,4 +29,11 @@ const entries = [
     message: "No matter how today looks, I'm grateful to have you in my life <3",
     image: "images/no_image_today.jpg"
   }
+  ,
+  {
+    date: "2026-01-04",
+    mood: "",
+    message: "I miss you a lot. We should hangout soon before I go to Atlanta. I dont even know if you read these, just know that I love you <3",
+    image: "images/no_image_today.jpg"
+  }
 ];
