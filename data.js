@@ -40,5 +40,11 @@ const entries = [
     mood: "",
     message: "I don't need perfect days to know that I love you :)",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-06",
+    mood: "",
+    message: "Glad to see you today! Hopefully you enjoyed our time as much as I did <3",
+    image: "images/no_image_today.jpg"
   }
 ];
