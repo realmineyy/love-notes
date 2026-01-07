@@ -46,5 +46,11 @@ const entries = [
     mood: "",
     message: "Glad to see you today! Hopefully you enjoyed our time as much as I did <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-07",
+    mood: "Hilarious",
+    message: "I am dramatic... dramatically in love with you hehe <3",
+    image: "images/no_image_today.jpg"
   }
 ];
