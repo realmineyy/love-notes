@@ -59,5 +59,11 @@ const entries = [
     mood: "Worried",
     message: "Sorry you felt bad today, just want to make sure you know I still love you! <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-09",
+    mood: "Sorry",
+    message: "I am not very good at words but given the opportunity and some time I can try. You are by far the most amazing thing to ever happen to me. You came in at such a perfect time in my life and brought like a calm to the storm that was my life at the time. At this point in time, you probably feel as if you can't trust me or forgive me, and for that I have no excuse. No excuse being that I have no excuse for making you feel that way when you should always feel as if you can trust me and rely on me. I am sorry that I forgot to write this message sooner, you deserve it. I really hope that you stay with me because I have no idea where I'd be without you. Sincerely, Aiden.",
+    image: "images/no_image_today.jpg"
   }
 ];
