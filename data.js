@@ -71,5 +71,11 @@ const entries = [
     mood: "Glad",
     message: "I am glad you're still with me and I honestly can't believe that you are. I am grateful to have you and happier everyday im with you. Thank you for being in my life. I love you <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-11",
+    mood: "",
+    message: "You are so incredibly beautiful and I am lucky to have you. I miss you tho, u should come over :) I love you <3",
+    image: "images/no_image_today.jpg"
   }
 ];
