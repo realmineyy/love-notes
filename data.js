@@ -86,8 +86,8 @@ const entries = [
   },
   {
     date: "2026-01-13",
-    mood: "",
-    message: "Hope you have an amazing day! Love you <3",
+    mood: "Happy",
+    message: "You are the most beautiful and amazing girl ever! I'm so glad to have you! Love you <3",
     image: "images/no_image_today.jpg"
   }
 ];
