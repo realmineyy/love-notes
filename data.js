@@ -89,5 +89,11 @@ const entries = [
     mood: "Happy",
     message: "You are the most beautiful and amazing girl ever! I'm so glad to have you! Love you <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-14",
+    mood: "",
+    message: "I'm so lucky to have you in my life, I love you so much <3",
+    image: "images/no_image_today.jpg"
   }
 ];
