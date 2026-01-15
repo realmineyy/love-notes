@@ -95,5 +95,11 @@ const entries = [
     mood: "",
     message: "I'm so lucky to have you in my life, I love you so much <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-15",
+    mood: "",
+    message: "I'm so glad you came over this morning, I love hanging out with you. Sorry for that one thing, won't happen again but figured I'd try something new. Love you <3",
+    image: "images/no_image_today.jpg"
   }
 ];
