@@ -101,5 +101,11 @@ const entries = [
     mood: "",
     message: "I'm so glad you came over this morning, I love hanging out with you. Sorry for that one thing, won't happen again but figured I'd try something new. Love you <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-16",
+    mood: "",
+    message: "I think you are beautiful and sweet and kind (sorta) and I hope you know that I will always love you, cherish you, and want the best for you. I love you so much <3",
+    image: "images/no_image_today.jpg"
   }
 ];
