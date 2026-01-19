@@ -117,7 +117,7 @@ const entries = [
   {
     date: "2026-01-18",
     mood: "",
-    message: “you are the greatest thing to happen to me and im happy that youve stuck with me even with the distance, i love you”,
+    message: "you are the greatest thing to happen to me and im happy that youve stuck with me even with the distance, i love you",
     image: "images/no_image_today.jpg"
   },
   {
