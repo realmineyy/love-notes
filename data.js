@@ -131,5 +131,11 @@ const entries = [
     mood: "",
     message: "You push me to be better every single day. I am so grateful to have you, I love you <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-21",
+    mood: "",
+    message: "Sorry my video has been delayed, just know you're on my mind always. Love you <3",
+    image: "images/no_image_today.jpg"
   }
 ];
