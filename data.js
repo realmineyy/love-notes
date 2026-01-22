@@ -137,5 +137,11 @@ const entries = [
     mood: "",
     message: "Sorry my video has been delayed, just know you're on my mind always. Love you <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-22",
+    mood: "",
+    message: "I am writing this at 12:41 A.M. I am so sorry that you have a lot going on and I am not doing anything to help. I want you to know that I love you, care for you, and will always be on your side. Please talk to me or ask for help if you need to or just want to chat with me, I would love to talk to you about random stuff all the time. Love Always, Aiden.",
+    image: "images/no_image_today.jpg"
   }
 ];
