@@ -143,5 +143,11 @@ const entries = [
     mood: "",
     message: "I am writing this at 12:41 A.M. I am so sorry that you have a lot going on and I am not doing anything to help. I want you to know that I love you, care for you, and will always be on your side. Please talk to me or ask for help if you need to or just want to chat with me, I would love to talk to you about random stuff all the time. Love Always, Aiden.",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-23",
+    mood: "",
+    message: "I care about you so much and I am sorry that you're going through stuff but I want to be there for you always. JUst know that I am here for you if you need me, please talk to me. I love you <3",
+    image: "images/no_image_today.jpg"
   }
 ];
