@@ -149,5 +149,11 @@ const entries = [
     mood: "",
     message: "I care about you so much and I am sorry that you're going through stuff but I want to be there for you always. JUst know that I am here for you if you need me, please talk to me. I love you <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-24",
+    mood: "",
+    message: "I love you so much and I am so glad you're in my life <3",
+    image: "images/no_image_today.jpg"
   }
 ];
