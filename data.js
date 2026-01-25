@@ -155,5 +155,11 @@ const entries = [
     mood: "",
     message: "I love you so much and I am so glad you're in my life <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-25",
+    mood: "",
+    message: "I'm feeling better and I hope you start to feel better too. Sorry to get you sick digitally (or however you put it), I love you <3",
+    image: "images/no_image_today.jpg"
   }
 ];
