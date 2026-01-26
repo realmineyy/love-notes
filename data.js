@@ -161,5 +161,11 @@ const entries = [
     mood: "",
     message: "I'm feeling better and I hope you start to feel better too. Sorry to get you sick digitally (or however you put it), I love you <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-26",
+    mood: "Empty",
+    message: "Couldn't find the words to write and didn't want to cheat you and make the seas rise any higher. Just know I love you <3",
+    image: "images/no_image_today.jpg"
   }
 ];
