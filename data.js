@@ -167,5 +167,11 @@ const entries = [
     mood: "Empty",
     message: "Couldn't find the words to write and didn't want to cheat you and make the seas rise any higher. Just know I love you <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-27",
+    mood: "Empty",
+    message: "You are the most beautiful and amazing woman I have ever had the pleasure of being with and I hope that never ends. I love you so much <3",
+    image: "images/no_image_today.jpg"
   }
 ];
