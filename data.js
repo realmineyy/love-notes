@@ -173,5 +173,11 @@ const entries = [
     mood: "",
     message: "You are the most beautiful and amazing woman I have ever had the pleasure of being with and I hope that never ends. I love you so much <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-28",
+    mood: "",
+    message: "I love you sooooo much and I really hope I get to see you on Friday! <3",
+    image: "images/no_image_today.jpg"
   }
 ];
