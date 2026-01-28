@@ -177,7 +177,7 @@ const entries = [
   {
     date: "2026-01-28",
     mood: "",
-    message: "I love you sooooo much and I really hope I get to see you on Friday! <3",
+    message: "I want to be with you for the rest of my life. I have made plenty of mistakes during our relationship but I think you are the smartest, most wonderful, kindest, most beautiful girl in the world and I know that I haven't made you feel as if that is the truth, but I promise if you'll let me I'll dedicate the rest of my life to making sure that you know how amazing you are. I love you so much, stay with me forever. Truly yours, Aiden.",
     image: "images/no_image_today.jpg"
   }
 ];
