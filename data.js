@@ -170,7 +170,7 @@ const entries = [
   },
   {
     date: "2026-01-27",
-    mood: "Empty",
+    mood: "",
     message: "You are the most beautiful and amazing woman I have ever had the pleasure of being with and I hope that never ends. I love you so much <3",
     image: "images/no_image_today.jpg"
   }
