@@ -179,5 +179,11 @@ const entries = [
     mood: "",
     message: "I want to be with you for the rest of my life. I have made plenty of mistakes during our relationship but I think you are the smartest, most wonderful, kindest, most beautiful girl in the world and I know that I haven't made you feel as if that is the truth, but I promise if you'll let me I'll dedicate the rest of my life to making sure that you know how amazing you are. I love you so much, stay with me forever. Truly yours, Aiden.",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-29",
+    mood: "",
+    message: "I think you are the most amazing person in the world and I am so lucky to have you in my life, I love you so much <3",
+    image: "images/no_image_today.jpg"
   }
 ];
