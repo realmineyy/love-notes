@@ -141,3 +141,52 @@ body.dark #themeToggle:hover {
   background: rgba(230, 234, 242, 0.28);
 }
 
+.memory-section {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+#randomMemoryBtn {
+  padding: 12px 24px;
+  background: #1f3b66;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.memory-card {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.05);
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.memory-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+}
+
+.memory-date {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.memory-note {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Dark mode support */
+body.dark .memory-card {
+  background: rgba(255, 255, 255, 0.1);
+}
