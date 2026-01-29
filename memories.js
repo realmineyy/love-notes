@@ -1,6 +1,6 @@
 const memories = [
   {
-    date: "December 16th, 2025",
+    date: "December 14th, 2025",
     image: "./images/IMG_9064.jpeg",
     note: "Your first birthday that we had together. I was so happy to be invited to your birthday dinner (even though I had to ask lol). I had a great time talking with your parents, siblings, and friends. Glad I could come!"
   },
