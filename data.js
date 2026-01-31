@@ -185,5 +185,11 @@ const entries = [
     mood: "",
     message: "I think you are the most amazing person in the world and I am so lucky to have you in my life, I love you so much <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-30",
+    mood: "",
+    message: "You are the best thing to ever happen to me, I love you so much <3",
+    image: "images/no_image_today.jpg"
   }
 ];
