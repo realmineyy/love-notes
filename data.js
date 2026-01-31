@@ -191,5 +191,11 @@ const entries = [
     mood: "",
     message: "You are the best thing to ever happen to me, I love you so much <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-01-31",
+    mood: "",
+    message: "I am so glad to have you in ym life and I hope you stay with me forever <3",
+    image: "images/no_image_today.jpg"
   }
 ];
