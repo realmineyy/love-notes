@@ -197,5 +197,11 @@ const entries = [
     mood: "",
     message: "I am so glad to have you in ym life and I hope you stay with me forever <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-01",
+    mood: "",
+    message: "Happy Black History Month!! Glad to have a beautiful queen like you in my life <3",
+    image: "images/no_image_today.jpg"
   }
 ];
