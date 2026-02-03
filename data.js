@@ -209,5 +209,11 @@ const entries = [
     mood: "",
     message: "I hope you actually enjoy reading these. It means a lot that you actually check this every single day. I put a lot of effort into it and I can appreciate that it means something to you. I love you so much <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-03",
+    mood: "",
+    message: "I appreciate your support everyday and I don't think I could go a day without talking to you. I love you so much <3",
+    image: "images/no_image_today.jpg"
   }
 ];
