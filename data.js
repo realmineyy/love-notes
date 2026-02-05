@@ -221,5 +221,11 @@ const entries = [
     mood: "",
     message: "You're the prettiest girl in the world! I love you so much! <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-05",
+    mood: "",
+    message: "I love how independent and strong-willed you are. I can't imagine being with anybody else. I love you <3",
+    image: "images/no_image_today.jpg"
   }
 ];
