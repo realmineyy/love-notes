@@ -227,5 +227,11 @@ const entries = [
     mood: "",
     message: "I love how independent and strong-willed you are. I can't imagine being with anybody else. I love you <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-06",
+    mood: "",
+    message: "I am really excited to be forgiven for my past mistakes. I'm so glad to have you in my life. I love you soooo much <3",
+    image: "images/no_image_today.jpg"
   }
 ];
