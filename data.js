@@ -233,5 +233,11 @@ const entries = [
     mood: "",
     message: "I am really excited to be forgiven for my past mistakes. I'm so glad to have you in my life. I love you soooo much <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-07",
+    mood: "",
+    message: "I love how smart you are! I love everything about you <3",
+    image: "images/no_image_today.jpg"
   }
 ];
