@@ -245,5 +245,11 @@ const entries = [
     mood: "",
     message: "I hope you have the most amazing life! You deserve it for being so perfect. I love you <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-09",
+    mood: "",
+    message: "You're going to do so amazing on your ACT and you're gonna be valedictorian! I'm so proud of everything you've accomplished! I love you so much <3",
+    image: "images/no_image_today.jpg"
   }
 ];
