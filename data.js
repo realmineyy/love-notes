@@ -263,5 +263,11 @@ const entries = [
     mood: "",
     message: "I can't wait to spend the rest of my life with you! I love you so much <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-12",
+    mood: "",
+    message: "You are so graceful and I couldn't have asked for a better partner! I love you <3",
+    image: "images/no_image_today.jpg"
   }
 ];
