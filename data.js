@@ -1,7 +1,8 @@
-// Change this once
-const ANNIVERSARY_DATE = "2025-09-15";
-const TOGETHER_SINCE = "2025-09-15";
-
+const relationship = {
+  startDate: "2025-09-15",
+  anniversaryMonth: 9,  // September (1–12)
+  anniversaryDay: 15
+};
 
 // Add new entries to the BOTTOM
 const messages = [
