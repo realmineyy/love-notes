@@ -270,5 +270,11 @@ const messages = [
     mood: "",
     text: "You are so graceful and I couldn't have asked for a better partner! I love you <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-13",
+    mood: "",
+    text: "I love you so much and I can't see my life without you <3",
+    image: "images/no_image_today.jpg"
   }
 ];
