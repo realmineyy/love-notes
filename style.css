@@ -8,14 +8,11 @@
   --text-dark: #e6ecff;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
-    "Inter", system-ui, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", system-ui, sans-serif;
   background: linear-gradient(180deg, #f7f9fc, #eef2f8);
   color: var(--text-light);
   min-height: 100vh;
@@ -33,17 +30,16 @@ body.dark {
   margin: 0 auto;
 }
 
-/* Dark mode toggle */
 #darkToggle {
   position: fixed;
   top: 20px;
   right: 20px;
-  background: rgba(255, 255, 255, 0.8);
   border: none;
   border-radius: 999px;
   padding: 10px 14px;
-  cursor: pointer;
   font-size: 1.1rem;
+  cursor: pointer;
+  background: rgba(255,255,255,0.85);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
@@ -52,7 +48,6 @@ body.dark #darkToggle {
   color: white;
 }
 
-/* Cards */
 .card,
 .memory-card {
   background: var(--card-light);
@@ -60,80 +55,58 @@ body.dark #darkToggle {
   border-radius: 28px;
   padding: 2rem;
   margin-bottom: 2rem;
-  box-shadow:
-    0 20px 40px rgba(0, 0, 0, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
 
 body.dark .card,
 body.dark .memory-card {
   background: var(--card-dark);
-  box-shadow:
-    0 20px 40px rgba(0, 0, 0, 0.35),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
-/* Typography */
-h1 {
-  margin-top: 0.5rem;
-  font-size: 2rem;
-}
+h1 { margin-top: 0.5rem; }
 
-.subtitle {
-  opacity: 0.7;
-}
+.subtitle { opacity: 0.7; }
 
-/* Mood bubble */
 .mood {
   display: inline-block;
   margin-bottom: 1rem;
   padding: 6px 14px;
   border-radius: 999px;
-  background: rgba(79, 124, 255, 0.12);
+  background: rgba(79,124,255,0.12);
   color: #4f7cff;
   font-size: 0.8rem;
-  font-weight: 500;
 }
 
-/* Buttons */
 button {
-  appearance: none;
   border: none;
   background: linear-gradient(135deg, #4f7cff, #6ea8ff);
   color: white;
   padding: 14px 28px;
   border-radius: 999px;
-  font-size: 1rem;
   cursor: pointer;
-  box-shadow: 0 12px 24px rgba(79, 124, 255, 0.35);
 }
 
-button:hover {
-  transform: translateY(-1px);
-}
-
-/* Memory section */
-.memory-section {
-  text-align: center;
-}
+.memory-section { text-align: center; }
 
 .memory-card img {
   width: 100%;
   border-radius: 22px;
   margin-bottom: 1rem;
-  box-shadow: 0 16px 40px rgba(0,0,0,0.25);
 }
 
-.memory-date {
+.hidden { display: none; }
+
+.archive-entry {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+body.dark .archive-entry {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.archive-date {
   font-size: 0.85rem;
-  opacity: 0.7;
-}
-
-.memory-note {
-  font-size: 1rem;
-  line-height: 1.4;
-}
-
-.hidden {
-  display: none;
+  opacity: 0.6;
 }
