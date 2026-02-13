@@ -110,3 +110,26 @@ body.dark .archive-entry {
   font-size: 0.85rem;
   opacity: 0.6;
 }
+
+.archive-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #4f7cff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.archive-entry {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+body.dark .archive-entry {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.archive-date {
+  font-size: 0.85rem;
+  opacity: 0.6;
+}

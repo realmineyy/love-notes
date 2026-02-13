@@ -4,7 +4,7 @@ const TOGETHER_SINCE = "2025-09-15";
 
 
 // Add new entries to the BOTTOM
-const entries = [
+const messages = [
   {
     date: "2025-12-31",
     mood: "✨ Grateful",

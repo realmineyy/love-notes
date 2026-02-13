@@ -8,37 +8,33 @@
 </head>
 <body>
 
-<button id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+<button id="darkToggle">🌙</button>
 
 <div class="container">
 
-  <!-- Header -->
   <header class="card">
     <p class="mood">✨ Grateful</p>
     <h1>Hi love</h1>
     <p class="subtitle">
-      I wanted you to have a place that always reminds you how much you matter to me.
+      This is a place you can come back to whenever you need us.
     </p>
   </header>
 
-  <!-- Time Section -->
   <section class="card">
     <h2>⏳ Our Time</h2>
     <p id="togetherTime"></p>
     <p id="anniversaryCountdown"></p>
   </section>
 
-  <!-- Today’s Message -->
+  <!-- Today's Message -->
   <section class="card">
     <h2>Today’s Note</h2>
     <p id="todayDate"></p>
     <p id="todayMessage"></p>
-  </section>
 
-  <!-- Message Archive -->
-  <section class="card">
-    <h2>Message Archive</h2>
-    <div id="messageArchive"></div>
+    <a href="archive.html" class="archive-link">
+      View Message Archive →
+    </a>
   </section>
 
   <!-- Memories -->
@@ -47,9 +43,9 @@
     <button id="randomMemoryBtn">Random Memory 💙</button>
 
     <div id="memoryDisplay" class="memory-card hidden">
-      <img id="memoryImage" src="" alt="Memory" />
-      <p class="memory-date" id="memoryDate"></p>
-      <p class="memory-note" id="memoryNote"></p>
+      <img id="memoryImage" />
+      <p id="memoryDate"></p>
+      <p id="memoryNote"></p>
     </div>
   </section>
 
