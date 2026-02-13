@@ -4,48 +4,59 @@
   <meta charset="UTF-8" />
   <title>For You 💙</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Dark Mode Toggle -->
-  <button id="darkToggle" aria-label="Toggle dark mode">
-    🌙
-  </button>
+<button id="darkToggle" aria-label="Toggle dark mode">🌙</button>
 
-  <div class="container">
+<div class="container">
 
-    <header class="card">
-      <p class="mood">✨ Grateful</p>
-      <h1>Hi Gen</h1>
-      <p class="subtitle">
-        I wanted you to always have a place to come back to us <3
-      </p>
-    </header>
+  <!-- Header -->
+  <header class="card">
+    <p class="mood">✨ Grateful</p>
+    <h1>Hi love</h1>
+    <p class="subtitle">
+      I wanted you to have a place that always reminds you how much you matter to me.
+    </p>
+  </header>
 
-    <section class="card">
-      <h2>⏳ Our Time</h2>
-      <p id="togetherTime"></p>
-      <p id="anniversaryCountdown"></p>
-    </section>
+  <!-- Time Section -->
+  <section class="card">
+    <h2>⏳ Our Time</h2>
+    <p id="togetherTime"></p>
+    <p id="anniversaryCountdown"></p>
+  </section>
 
-    <section class="card memory-section">
-      <h2>Memories</h2>
+  <!-- Today’s Message -->
+  <section class="card">
+    <h2>Today’s Note</h2>
+    <p id="todayDate"></p>
+    <p id="todayMessage"></p>
+  </section>
 
-      <button id="randomMemoryBtn">Random Memory 💙</button>
+  <!-- Message Archive -->
+  <section class="card">
+    <h2>Message Archive</h2>
+    <div id="messageArchive"></div>
+  </section>
 
-      <div id="memoryDisplay" class="memory-card hidden">
-        <img id="memoryImage" src="" alt="Memory" />
-        <p class="memory-date" id="memoryDate"></p>
-        <p class="memory-note" id="memoryNote"></p>
-      </div>
-    </section>
+  <!-- Memories -->
+  <section class="card memory-section">
+    <h2>Memories</h2>
+    <button id="randomMemoryBtn">Random Memory 💙</button>
 
-  </div>
+    <div id="memoryDisplay" class="memory-card hidden">
+      <img id="memoryImage" src="" alt="Memory" />
+      <p class="memory-date" id="memoryDate"></p>
+      <p class="memory-note" id="memoryNote"></p>
+    </div>
+  </section>
 
-  <!-- Scripts -->
-  <script src="memories.js"></script>
-  <script src="script.js"></script>
+</div>
+
+<script src="data.js"></script>
+<script src="memories.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
