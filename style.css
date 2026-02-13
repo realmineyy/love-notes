@@ -1,175 +1,127 @@
+:root {
+  --bg-light: #f7f9fc;
+  --bg-dark: #0b1526;
+  --card-light: rgba(255, 255, 255, 0.7);
+  --card-dark: rgba(255, 255, 255, 0.08);
+  --primary: #4f7cff;
+  --text-light: #0b1526;
+  --text-dark: #e6ecff;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: Georgia, serif;
-  background: #faf7f2;
-  color: #2b2b2b;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Inter", system-ui, sans-serif;
+  background: linear-gradient(180deg, #f7f9fc, #eef2f8);
+  color: var(--text-light);
+  min-height: 100vh;
+  padding: 4rem 1.5rem;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+body.dark {
+  background: linear-gradient(180deg, #0b1526, #020814);
+  color: var(--text-dark);
 }
 
 .container {
-  max-width: 640px;
-  margin: auto;
-  padding: 2rem 1.5rem;
-  text-align: center;
+  max-width: 520px;
+  margin: 0 auto;
 }
 
+/* Dark mode toggle */
+#darkToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 999px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+body.dark #darkToggle {
+  background: rgba(255,255,255,0.15);
+  color: white;
+}
+
+/* Cards */
+.card,
+.memory-card {
+  background: var(--card-light);
+  backdrop-filter: blur(16px);
+  border-radius: 28px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+body.dark .card,
+body.dark .memory-card {
+  background: var(--card-dark);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+/* Typography */
 h1 {
-  font-weight: normal;
+  margin-top: 0.5rem;
+  font-size: 2rem;
 }
 
-#countdown {
-  margin-bottom: 1.5rem;
-  font-style: italic;
-}
-
-#entry img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 1rem;
-}
-
-#entryDate {
-  display: block;
-  margin-top: 1rem;
-  font-size: 0.85rem;
-  opacity: 0.6;
-}
-
-.archive {
-  display: grid;
-  gap: 1.75rem;
-}
-
-.archive-card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.archive-card span {
-  display: block;
-  font-size: 0.8rem;
-  opacity: 0.6;
-}
-
-a {
-  display: inline-block;
-  margin-top: 2rem;
-  text-decoration: none;
-  color: inherit;
+.subtitle {
   opacity: 0.7;
 }
 
-#togetherTime {
-  margin-top: 0.75rem;
-  font-size: 0.9rem;
-  opacity: 0.75;
-}
-
-#entryMood,
+/* Mood bubble */
 .mood {
   display: inline-block;
-  margin-bottom: 0.75rem;
-  padding: 0.25rem 0.75rem;
+  margin-bottom: 1rem;
+  padding: 6px 14px;
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(79, 124, 255, 0.12);
+  color: #4f7cff;
   font-size: 0.8rem;
-  font-style: italic;
-  opacity: 0.85;
+  font-weight: 500;
 }
 
-/* Dark Mode — Midnight Blue */
-body.dark {
-  background: #0e1624;
-  color: #e6eaf2;
-}
-
-body.dark a {
-  color: #e6eaf2;
-}
-
-body.dark #countdown,
-body.dark #togetherTime {
-  opacity: 0.85;
-}
-
-body.dark #entryMood,
-body.dark .mood {
-  background: rgba(230, 234, 242, 0.15);
-}
-
-body.dark img {
-  filter: brightness(0.95);
-}
-
-#themeToggle {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 1000;
-
-  width: 42px;
-  height: 42px;
-
-  border-radius: 50%;
+/* Buttons */
+button {
+  appearance: none;
   border: none;
-
-  background: rgba(0, 0, 0, 0.08);
-  color: inherit;
-
-  font-size: 1.2rem;
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  backdrop-filter: blur(6px);
-}
-
-#themeToggle:hover {
-  background: rgba(0, 0, 0, 0.15);
-}
-
-body.dark #themeToggle {
-  background: rgba(230, 234, 242, 0.18);
-}
-
-body.dark #themeToggle:hover {
-  background: rgba(230, 234, 242, 0.28);
-}
-
-.memory-section {
-  margin-top: 3rem;
-  text-align: center;
-}
-
-#randomMemoryBtn {
-  padding: 12px 24px;
-  background: #1f3b66;
+  background: linear-gradient(135deg, #4f7cff, #6ea8ff);
   color: white;
-  border: none;
-  border-radius: 20px;
+  padding: 14px 28px;
+  border-radius: 999px;
   font-size: 1rem;
   cursor: pointer;
+  box-shadow: 0 12px 24px rgba(79, 124, 255, 0.35);
 }
 
-.memory-card {
-  margin-top: 1.5rem;
-  padding: 1rem;
-  border-radius: 16px;
-  background: rgba(0, 0, 0, 0.05);
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+button:hover {
+  transform: translateY(-1px);
+}
+
+/* Memory section */
+.memory-section {
+  text-align: center;
 }
 
 .memory-card img {
   width: 100%;
-  border-radius: 12px;
-  margin-bottom: 0.75rem;
+  border-radius: 22px;
+  margin-bottom: 1rem;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.25);
 }
 
 .memory-date {
@@ -184,9 +136,4 @@ body.dark #themeToggle:hover {
 
 .hidden {
   display: none;
-}
-
-/* Dark mode support */
-body.dark .memory-card {
-  background: rgba(255, 255, 255, 0.1);
 }

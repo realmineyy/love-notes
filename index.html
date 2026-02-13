@@ -1,138 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>For You ❤️</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>For You 💙</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<main class="container">
-  <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+  <!-- Dark Mode Toggle -->
+  <button id="darkToggle" aria-label="Toggle dark mode">
+    🌙
+  </button>
 
-  <h1>For You ❤️</h1>
+  <div class="container">
 
-  <p id="countdown"></p>
-  <p id="togetherTime"></p>
+    <header class="card">
+      <p class="mood">✨ Grateful</p>
+      <h1>Hi love</h1>
+      <p class="subtitle">
+        I made this so you’d always have a place to come back to us.
+      </p>
+    </header>
 
-  <section id="entry">
-    <img id="entryImage" alt="">
-    <p id="entryMood"></p>
-    <p id="entryMessage"></p>
-    <span id="entryDate"></span>
-  </section>
+    <section class="card">
+      <h2>⏳ Our Time</h2>
+      <p id="togetherTime"></p>
+      <p id="anniversaryCountdown"></p>
+    </section>
 
-  <a href="archive.html">View past days →</a>
+    <section class="card memory-section">
+      <h2>Memories</h2>
 
-  <section class="memory-section">
-    <h2>Memories</h2>
+      <button id="randomMemoryBtn">Random Memory 💙</button>
 
-    <button id="randomMemoryBtn">Random Memory 💙</button>
+      <div id="memoryDisplay" class="memory-card hidden">
+        <img id="memoryImage" src="" alt="Memory" />
+        <p class="memory-date" id="memoryDate"></p>
+        <p class="memory-note" id="memoryNote"></p>
+      </div>
+    </section>
 
-    <div id="memoryDisplay" class="memory-card hidden">
-      <img id="memoryImage" alt="Memory">
-      <p class="memory-date" id="memoryDate"></p>
-      <p class="memory-note" id="memoryNote"></p>
-    </div>
-  </section>
-</main>
+  </div>
 
-<script src="data.js"></script>
-<script src="memories.js"></script>
-<script>
-  const latest = entries[entries.length - 1];
-
-  document.getElementById("entryImage").src = latest.image;
-  document.getElementById("entryMood").textContent = latest.mood;
-  document.getElementById("entryMessage").textContent = latest.message;
-  document.getElementById("entryDate").textContent = latest.date;
-
-  function updateCountdown() {
-    const now = new Date();
-    let anniversary = new Date(ANNIVERSARY_DATE);
-    anniversary.setFullYear(now.getFullYear());
-
-    if (anniversary < now) {
-      anniversary.setFullYear(now.getFullYear() + 1);
-    }
-
-    const daysLeft = Math.ceil(
-      (anniversary - now) / (1000 * 60 * 60 * 24)
-    );
-
-    document.getElementById("countdown").textContent =
-      `💖 ${daysLeft} days until our anniversary`;
-  }
-
-  function updateTogetherTime() {
-    const start = new Date(TOGETHER_SINCE);
-    const now = new Date();
-
-    let years = now.getFullYear() - start.getFullYear();
-    let months = now.getMonth() - start.getMonth();
-    let days = now.getDate() - start.getDate();
-
-    if (days < 0) {
-      months--;
-      const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
-      days += prevMonth.getDate();
-    }
-
-    if (months < 0) {
-      years--;
-      months += 12;
-    }
-
-    const diffMs = now - start;
-    const hours = Math.floor(diffMs / (1000 * 60 * 60)) % 24;
-    const minutes = Math.floor(diffMs / (1000 * 60)) % 60;
-
-    document.getElementById("togetherTime").textContent =
-      `⏳ We’ve been together for ${years} years, ${months} months, ${days} days, ${hours} hours, and ${minutes} minutes`;
-  }
-
-  updateCountdown();
-  updateTogetherTime();
-
-  // Optional: update time every minute
-  setInterval(updateTogetherTime, 60000);
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const toggle = document.getElementById("themeToggle");
-    const body = document.body;
-
-    if (!toggle) return;
-
-    // Load saved preference
-    if (localStorage.getItem("theme") === "dark") {
-      body.classList.add("dark");
-      toggle.textContent = "☀️";
-    }
-
-    toggle.addEventListener("click", () => {
-      body.classList.toggle("dark");
-
-      const isDark = body.classList.contains("dark");
-      toggle.textContent = isDark ? "☀️" : "🌙";
-      localStorage.setItem("theme", isDark ? "dark" : "light");
-    });
-  });
-
-  const randomBtn = document.getElementById("randomMemoryBtn");
-  const card = document.getElementById("memoryDisplay");
-
-  randomBtn.addEventListener("click", () => {
-    const random = memories[Math.floor(Math.random() * memories.length)];
-
-    document.getElementById("memoryImage").src = random.image;
-    document.getElementById("memoryDate").textContent = random.date;
-    document.getElementById("memoryNote").textContent = random.note;
-
-    card.classList.remove("hidden");
-});
-
-</script>
-
+  <!-- Scripts -->
+  <script src="memories.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
