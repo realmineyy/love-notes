@@ -2,58 +2,189 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>For You 💙</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <title>For You</title>
+  <script src="data.js" defer></script>
+
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: rgba(255,255,255,0.06);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #3b82f6;
+      --glass: blur(20px);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #0f172a, #020617);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 720px;
+      padding: 40px;
+    }
+
+    .card {
+      background: var(--card);
+      backdrop-filter: var(--glass);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .message {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-top: 16px;
+    }
+
+    .timer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .timer div {
+      background: rgba(255,255,255,0.04);
+      border-radius: 16px;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .timer span {
+      display: block;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-top: 6px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    button {
+      flex: 1;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      border: none;
+      color: white;
+      padding: 14px;
+      border-radius: 14px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    button.secondary {
+      background: rgba(255,255,255,0.08);
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+      opacity: 0.95;
+    }
+  </style>
 </head>
-<body class="dark">
 
-<script src="data.js"></script>
-<script src="memories.js"></script>
-<script src="script.js"></script>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Today’s Note</h1>
+      <div class="muted" id="messageDate"></div>
+      <div class="message" id="dailyMessage"></div>
 
-<button id="darkToggle" aria-label="Toggle dark mode">☀️</button>
-
-<div class="container">
-
-  <header class="card">
-    <p class="mood">✨ Grateful</p>
-    <h1>Hi Gen</h1>
-    <p class="subtitle">
-      Wanted to make sure you always know how I feel about you.
-    </p>
-  </header>
-
-  <section class="card">
-    <h2>⏳ Our Time</h2>
-    <p id="togetherTime"></p>
-    <p id="anniversaryCountdown"></p>
-  </section>
-
-
-  <!-- Today's Message -->
-  <section class="card">
-    <h2>Today’s Note</h2>
-    <p id="todayDate"></p>
-    <p id="todayMessage"></p>
-
-    <a href="archive.html" class="archive-link">
-      View Message Archive →
-    </a>
-  </section>
-
-  <!-- Memories -->
-  <section class="card memory-section">
-    <h2>Memories</h2>
-    <button id="randomMemoryBtn">Random Memory 💙</button>
-
-    <div id="memoryDisplay" class="memory-card hidden">
-      <img id="memoryImage" />
-      <p id="memoryDate"></p>
-      <p id="memoryNote"></p>
+      <div class="buttons">
+        <button onclick="randomMemory()">Random Memory</button>
+        <button class="secondary" onclick="location.href='archive.html'">
+          Message Archive
+        </button>
+      </div>
     </div>
-  </section>
 
-</div>
+    <div class="card">
+      <h1>Us</h1>
+      <div class="timer">
+        <div>
+          Time Together
+          <span id="timeTogether"></span>
+        </div>
+        <div>
+          Until Anniversary
+          <span id="untilAnniversary"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function daysBetween(a, b) {
+      const oneDay = 1000 * 60 * 60 * 24;
+      return Math.floor((b - a) / oneDay);
+    }
+
+    function formatDate(dateStr) {
+      const d = new Date(dateStr + "T00:00:00");
+      return d.toLocaleDateString(undefined, {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      });
+    }
+
+    function loadDailyMessage() {
+      const messages = relationshipData.messages;
+      const latest = messages[messages.length - 1];
+
+      document.getElementById("dailyMessage").textContent = latest.text;
+      document.getElementById("messageDate").textContent = formatDate(latest.date);
+    }
+
+    function randomMemory() {
+      const messages = relationshipData.messages;
+      const random = messages[Math.floor(Math.random() * messages.length)];
+      document.getElementById("dailyMessage").textContent = random.text;
+      document.getElementById("messageDate").textContent = formatDate(random.date);
+    }
+
+    function loadTimers() {
+      const start = new Date(relationshipData.startDate + "T00:00:00");
+      const anniversary = new Date(relationshipData.anniversaryDate + "T00:00:00");
+      const now = new Date();
+
+      document.getElementById("timeTogether").textContent =
+        daysBetween(start, now) + " days";
+
+      if (anniversary < now) {
+        anniversary.setFullYear(now.getFullYear() + 1);
+      }
+
+      document.getElementById("untilAnniversary").textContent =
+        daysBetween(now, anniversary) + " days";
+    }
+
+    loadDailyMessage();
+    loadTimers();
+  </script>
 </body>
 </html>

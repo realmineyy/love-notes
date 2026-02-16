@@ -2,31 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Message Archive 💙</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <title>Message Archive</title>
+  <script src="data.js" defer></script>
+
+  <style>
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #0f172a, #020617);
+      color: #e5e7eb;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.06);
+      border-radius: 20px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    .date {
+      color: #9ca3af;
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+  </style>
 </head>
-<body class="dark">
 
-<button id="darkToggle">🌙</button>
+<body>
+  <div class="container">
+    <a href="index.html">← Back</a>
+    <div id="archive"></div>
+  </div>
 
-<div class="container">
+  <script>
+    function formatDate(dateStr) {
+      const d = new Date(dateStr + "T00:00:00");
+      return d.toLocaleDateString(undefined, {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      });
+    }
 
-  <header class="card">
-    <h1>Message Archive</h1>
-    <p class="subtitle">
-      Every note I’ve written for you, from newest to oldest.
-    </p>
-    <a href="index.html" class="archive-link">← Back</a>
-  </header>
+    const container = document.getElementById("archive");
+    const messages = [...relationshipData.messages].reverse();
 
-  <section class="card">
-    <div id="archiveList"></div>
-  </section>
+    messages.forEach(msg => {
+      const card = document.createElement("div");
+      card.className = "card";
 
-</div>
+      card.innerHTML = `
+        <div class="date">${formatDate(msg.date)}</div>
+        <div>${msg.text}</div>
+      `;
 
-<script src="data.js"></script>
-<script src="archive.js"></script>
+      container.appendChild(card);
+    });
+  </script>
 </body>
 </html>
