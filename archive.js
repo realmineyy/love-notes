@@ -1,11 +1,13 @@
-const container = document.getElementById("archive");
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("archive");
 
-messages
-  .slice()
-  .reverse()
-  .forEach(m => {
-    const div = document.createElement("div");
-    div.className = "card";
-    div.innerHTML = `<h3>${m.date}</h3><p>${m.text}</p>`;
-    container.appendChild(div);
-  });
+  messages
+    .slice()
+    .reverse()
+    .forEach(m => {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `<p class="date">${m.date}</p><p>${m.text}</p>`;
+      container.appendChild(card);
+    });
+});

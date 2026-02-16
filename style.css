@@ -1,44 +1,62 @@
+:root {
+  --bg: #0e1624;
+  --card: rgba(255,255,255,0.08);
+  --text: #e6eaf2;
+  --muted: rgba(230,234,242,0.6);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont;
-  background: #0e1624;
-  color: #e6eaf2;
-}
-
-body.dark {
-  background: #0e1624;
-  color: #e6eaf2;
+  background: var(--bg);
+  color: var(--text);
 }
 
 main {
-  max-width: 700px;
+  max-width: 720px;
   margin: auto;
-  padding: 2rem;
+  padding: 3rem 1.5rem;
+}
+
+h1, h2 {
+  font-weight: 500;
 }
 
 .card {
-  background: rgba(255,255,255,0.06);
-  padding: 1.5rem;
-  border-radius: 18px;
-  margin-bottom: 1.5rem;
+  background: var(--card);
+  backdrop-filter: blur(18px);
+  border-radius: 22px;
+  padding: 1.75rem;
+  margin-bottom: 1.75rem;
 }
 
-#darkToggle {
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  font-size: 1.2rem;
-  background: rgba(255,255,255,0.1);
-  border: none;
-  border-radius: 999px;
-  padding: 0.5rem 0.8rem;
-  cursor: pointer;
-  color: white;
+.date {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
 }
 
 .archiveLink {
   display: block;
-  margin-top: 2rem;
   text-align: center;
-  opacity: 0.8;
+  margin-top: 2rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+#darkToggle {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  border: none;
+  background: rgba(255,255,255,0.12);
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
