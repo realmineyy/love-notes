@@ -276,5 +276,17 @@ const messages = [
     mood: "",
     text: "I love you so much and I can't see my life without you <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-14",
+    mood: "",
+    text: "Happy Valentines Day!!!",
+    image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-15",
+    mood: "",
+    text: "You are the most amazing woman in the world and it's almost unbelievable that you want to spend any time with me at all. I love you so much <3",
+    image: "images/no_image_today.jpg"
   }
 ];
