@@ -1,14 +1,14 @@
-// ---------- Dark Mode ----------
+// ---------- DARK MODE ----------
 const toggle = document.getElementById("darkToggle");
 toggle.onclick = () => {
   document.body.classList.toggle("dark");
   toggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
 };
 
-// ---------- Relationship Timers ----------
+// ---------- TIMERS ----------
 const startDate = new Date(relationship.startDate + "T00:00:00");
 
-function updateTime() {
+function updateTimers() {
   const now = new Date();
 
   // Time together
@@ -36,21 +36,12 @@ function updateTime() {
     `${daysLeft} days until our anniversary`;
 }
 
-updateTime();
-setInterval(updateTime, 60000);
+updateTimers();
+setInterval(updateTimers, 60000);
 
-// ---------- Today’s Message ----------
-if (Array.isArray(messages) && messages.length > 0) {
+// ---------- TODAY'S MESSAGE ----------
+if (messages.length > 0) {
   const today = messages[messages.length - 1];
   document.getElementById("todayDate").textContent = today.date;
   document.getElementById("todayMessage").textContent = today.text;
 }
-
-// ---------- Random Memory ----------
-document.getElementById("randomMemoryBtn").onclick = () => {
-  const m = memories[Math.floor(Math.random() * memories.length)];
-  document.getElementById("memoryImage").src = m.image;
-  document.getElementById("memoryDate").textContent = m.date;
-  document.getElementById("memoryNote").textContent = m.note;
-  document.getElementById("memoryDisplay").classList.remove("hidden");
-};

@@ -1,10 +1,11 @@
-// Add new entries to the BOTTOM
-const relationshipData = {
-  startDate: "2025-09-15",        // when you started dating
-  anniversaryDate: "2026-09-15", // next anniversary date (year can change)
-  messages = [
+// relationship data
+const relationship = {
+  startDate: "2025-09-15",
+  anniversaryMonth: 9,
+  anniversaryDay: 15
+};
+const messages = [
   {
-    
     date: "2025-12-31",
     mood: "✨ Grateful",
     text: "I am so grateful to have you in my life going into this New Year! I hope you enjoy this year with me as much as I will with you! <3",
@@ -287,5 +288,4 @@ const relationshipData = {
     text: "You are the most amazing woman in the world and it's almost unbelievable that you want to spend any time with me at all. I love you so much <3",
     image: "images/no_image_today.jpg"
   }
-  ]
-};
+];

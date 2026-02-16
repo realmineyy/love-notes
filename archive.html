@@ -3,74 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <title>Message Archive</title>
-  <script src="data.js" defer></script>
-
-  <style>
-    body {
-      margin: 0;
-      background: radial-gradient(circle at top, #0f172a, #020617);
-      color: #e5e7eb;
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
-      padding: 40px;
-    }
-
-    .container {
-      max-width: 720px;
-      margin: auto;
-    }
-
-    .card {
-      background: rgba(255,255,255,0.06);
-      border-radius: 20px;
-      padding: 24px;
-      margin-bottom: 16px;
-    }
-
-    .date {
-      color: #9ca3af;
-      font-size: 0.85rem;
-      margin-bottom: 8px;
-    }
-
-    a {
-      color: #60a5fa;
-      text-decoration: none;
-      display: inline-block;
-      margin-bottom: 24px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-  <div class="container">
-    <a href="index.html">← Back</a>
+<body class="dark">
+  <script src="data.js"></script>
+  <script src="archive.js"></script>
+
+  <main>
+    <h1>Message Archive</h1>
     <div id="archive"></div>
-  </div>
-
-  <script>
-    function formatDate(dateStr) {
-      const d = new Date(dateStr + "T00:00:00");
-      return d.toLocaleDateString(undefined, {
-        year: "numeric",
-        month: "long",
-        day: "numeric"
-      });
-    }
-
-    const container = document.getElementById("archive");
-    const messages = [...relationshipData.messages].reverse();
-
-    messages.forEach(msg => {
-      const card = document.createElement("div");
-      card.className = "card";
-
-      card.innerHTML = `
-        <div class="date">${formatDate(msg.date)}</div>
-        <div>${msg.text}</div>
-      `;
-
-      container.appendChild(card);
-    });
-  </script>
+    <a href="index.html">← Back</a>
+  </main>
 </body>
 </html>
