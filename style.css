@@ -1,62 +1,154 @@
+/* ---------- THEME ---------- */
 :root {
-  --bg: #0e1624;
-  --card: rgba(255,255,255,0.08);
-  --text: #e6eaf2;
-  --muted: rgba(230,234,242,0.6);
+  --bg-main: #0b1322;
+  --bg-gradient: radial-gradient(
+    1200px circle at top,
+    #14203b 0%,
+    #0b1322 45%
+  );
+
+  --card-bg: rgba(255, 255, 255, 0.07);
+  --card-border: rgba(255, 255, 255, 0.12);
+
+  --text-main: #e8ecf4;
+  --text-muted: rgba(232, 236, 244, 0.6);
+
+  --accent: #7aa2ff;
 }
 
+/* ---------- GLOBAL ---------- */
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont;
-  background: var(--bg);
-  color: var(--text);
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", system-ui, sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
 }
 
+/* ---------- LAYOUT ---------- */
 main {
-  max-width: 720px;
-  margin: auto;
-  padding: 3rem 1.5rem;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 4rem;
 }
 
-h1, h2 {
+/* ---------- HEADINGS ---------- */
+h1 {
   font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
 }
 
+h2 {
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.75rem;
+}
+
+/* ---------- CARDS ---------- */
 .card {
-  background: var(--card);
-  backdrop-filter: blur(18px);
-  border-radius: 22px;
-  padding: 1.75rem;
-  margin-bottom: 1.75rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.08),
+    rgba(255,255,255,0.04)
+  );
+  backdrop-filter: blur(22px);
+  border-radius: 26px;
+  border: 1px solid var(--card-border);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255,255,255,0.08);
+}
+
+/* ---------- TEXT ---------- */
+p {
+  line-height: 1.6;
+  margin: 0;
 }
 
 .date {
   font-size: 0.85rem;
-  color: var(--muted);
+  color: var(--text-muted);
   margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+/* ---------- LINKS ---------- */
+a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+a:hover {
+  color: var(--text-main);
 }
 
 .archiveLink {
-  display: block;
-  text-align: center;
-  margin-top: 2rem;
-  color: var(--muted);
-  text-decoration: none;
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
 }
 
+/* ---------- DARK MODE TOGGLE ---------- */
 #darkToggle {
   position: fixed;
   top: 18px;
   right: 18px;
-  border: none;
-  background: rgba(255,255,255,0.12);
-  color: white;
-  padding: 0.5rem 0.75rem;
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
   border-radius: 999px;
-  font-size: 1.1rem;
+  border: 1px solid rgba(255,255,255,0.15);
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+
+  color: white;
+  font-size: 1.05rem;
   cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+#darkToggle:hover {
+  background: rgba(255,255,255,0.14);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* ---------- SUBTLE SEPARATION ---------- */
+section.card + section.card {
+  margin-top: 2.5rem;
+}
+
+/* ---------- MOBILE POLISH ---------- */
+@media (max-width: 480px) {
+  main {
+    padding-top: 3rem;
+  }
+
+  .card {
+    padding: 1.6rem;
+    border-radius: 22px;
+  }
 }
