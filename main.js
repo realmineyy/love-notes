@@ -1,32 +1,40 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* ---------- DARK MODE ---------- */
+  /* =========================
+     DARK MODE TOGGLE
+  ========================== */
   const toggle = document.getElementById("darkToggle");
-  toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-    toggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
-  });
+  if (toggle) {
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      toggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+    });
+  }
 
-  /* ---------- TIME LOGIC ---------- */
-  const startDate = new Date(relationship.startDate + "T00:00:00");
+  /* =========================
+     TIME TOGETHER (DETAILED)
+  ========================== */
+  const togetherEl = document.getElementById("togetherTime");
+  const anniversaryEl = document.getElementById("anniversaryCountdown");
 
-  function updateTimers() {
+  const start = new Date(relationship.startDate + "T00:00:00");
+
+  function updateTimeTogether() {
     const now = new Date();
-    let diff = Math.floor((now - startDate) / 1000); // seconds
+    let totalMinutes = Math.floor((now - start) / 60000);
 
-    const minutes = Math.floor(diff / 60);
-    const hours = Math.floor(minutes / 60);
-    const days = Math.floor(hours / 24);
-    const weeks = Math.floor(days / 7);
-    const months = Math.floor(days / 30.44);
+    const minutes = totalMinutes % 60;
+    const totalHours = Math.floor(totalMinutes / 60);
+    const hours = totalHours % 24;
+    const totalDays = Math.floor(totalHours / 24);
 
-    const remMinutes = minutes % 60;
-    const remHours = hours % 24;
-    const remDays = days % 7;
-    const remWeeks = weeks % 4;
+    const months = Math.floor(totalDays / 30.44);
+    const daysAfterMonths = totalDays - Math.floor(months * 30.44);
+    const weeks = Math.floor(daysAfterMonths / 7);
+    const days = daysAfterMonths % 7;
 
-    document.getElementById("togetherTime").textContent =
-      `${months} months · ${remWeeks} weeks · ${remDays} days · ${remHours} hours · ${remMinutes} minutes`;
+    togetherEl.textContent =
+      `${months} months · ${weeks} weeks · ${days} days · ${hours} hours · ${minutes} minutes`;
 
     // Anniversary countdown
     let next = new Date(
@@ -38,33 +46,38 @@ document.addEventListener("DOMContentLoaded", () => {
     if (now > next) next.setFullYear(now.getFullYear() + 1);
 
     const daysLeft = Math.ceil((next - now) / 86400000);
-
-    document.getElementById("anniversaryCountdown").textContent =
-      `${daysLeft} days until our anniversary`;
+    anniversaryEl.textContent = `${daysLeft} days until our anniversary`;
   }
 
-  updateTimers();
-  setInterval(updateTimers, 60000);
+  updateTimeTogether();
+  setInterval(updateTimeTogether, 60000);
 
-  /* ---------- TODAY MESSAGE ---------- */
-  if (messages && messages.length > 0) {
+  /* =========================
+     TODAY'S MESSAGE
+  ========================== */
+  if (messages && messages.length) {
     const today = messages[messages.length - 1];
     document.getElementById("todayDate").textContent = today.date;
     document.getElementById("todayMessage").textContent = today.text;
   }
 
-  /* ---------- RANDOM MEMORY ---------- */
-  const btn = document.getElementById("randomMemoryBtn");
-  const display = document.getElementById("memoryDisplay");
+  /* =========================
+     RANDOM MEMORY
+  ========================== */
+  const memoryBtn = document.getElementById("randomMemoryBtn");
+  const memoryWrap = document.getElementById("memoryDisplay");
 
-  btn.addEventListener("click", () => {
-    const memory = memories[Math.floor(Math.random() * memories.length)];
+  if (memoryBtn && Array.isArray(memories)) {
+    memoryBtn.addEventListener("click", () => {
+      const m = memories[Math.floor(Math.random() * memories.length)];
 
-    document.getElementById("memoryImage").src = memory.image;
-    document.getElementById("memoryDate").textContent = memory.date;
-    document.getElementById("memoryNote").textContent = memory.note;
+      document.getElementById("memoryImage").src = m.image;
+      document.getElementById("memoryImage").alt = m.note;
+      document.getElementById("memoryDate").textContent = m.date;
+      document.getElementById("memoryNote").textContent = m.note;
 
-    display.classList.remove("hidden");
-  });
+      memoryWrap.classList.remove("hidden");
+    });
+  }
 
 });
