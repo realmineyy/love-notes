@@ -287,5 +287,17 @@ const messages = [
     mood: "",
     text: "You are the most amazing woman in the world and it's almost unbelievable that you want to spend any time with me at all. I love you so much <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-16",
+    mood: "",
+    text: "You're so amazing and I can't wait to spend the rest of my time with you <3",
+    image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-17",
+    mood: "",
+    text: "Love you tons <3",
+    image: "images/no_image_today.jpg"
   }
 ];

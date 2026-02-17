@@ -11,24 +11,40 @@
 
   <button id="darkToggle" aria-label="Toggle dark mode">☀️</button>
 
-  <main>
-    <section class="card">
-      <h2>⏳ Our Time</h2>
-      <p id="togetherTime"></p>
-      <p id="anniversaryCountdown"></p>
-    </section>
+<main>
 
-    <section class="card">
-      <h2>💌 Today</h2>
-      <p class="date" id="todayDate"></p>
-      <p id="todayMessage"></p>
-    </section>
+  <section class="card">
+    <h2>⏳ Our Time</h2>
+    <p id="togetherTime"></p>
+    <p id="anniversaryCountdown"></p>
+  </section>
 
-    <a class="archiveLink" href="archive.html">View message archive →</a>
-  </main>
+  <section class="card">
+    <h2>💌 Today</h2>
+    <p class="date" id="todayDate"></p>
+    <p id="todayMessage"></p>
+  </section>
 
-  <!-- SCRIPTS -->
-  <script src="data.js" defer></script>
-  <script src="main.js" defer></script>
+  <section class="card">
+    <h2>📸 A Memory</h2>
+
+    <button id="randomMemoryBtn">Random Memory</button>
+
+    <div id="memoryDisplay" class="hidden">
+      <img id="memoryImage" />
+      <p class="date" id="memoryDate"></p>
+      <p id="memoryNote"></p>
+    </div>
+  </section>
+
+  <a class="archiveLink" href="archive.html">View message archive →</a>
+
+</main>
+
+<!-- SCRIPT ORDER -->
+<script src="data.js" defer></script>
+<script src="memories.js" defer></script>
+<script src="main.js" defer></script>
+
 </body>
 </html>

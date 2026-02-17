@@ -152,3 +152,31 @@ section.card + section.card {
     border-radius: 22px;
   }
 }
+
+#randomMemoryBtn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.1);
+  color: white;
+  cursor: pointer;
+}
+
+#randomMemoryBtn:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+#memoryDisplay {
+  margin-top: 1.25rem;
+}
+
+#memoryDisplay img {
+  width: 100%;
+  border-radius: 18px;
+  margin-bottom: 0.75rem;
+}
+
+.hidden {
+  display: none;
+}
