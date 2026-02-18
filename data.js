@@ -299,5 +299,11 @@ const messages = [
     mood: "",
     text: "Love you tons <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-18",
+    mood: "",
+    text: "You are the finest girl in the world. I lowk pulled a baddie asf and I can't say that I've felt any luckier in my life. I love you so much and I'm glad your in my life <3",
+    image: "images/no_image_today.jpg"
   }
 ];
