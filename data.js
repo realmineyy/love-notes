@@ -311,5 +311,11 @@ const messages = [
     mood: "",
     text: "You're just so objectively fun to talk to and be around, I can't wait to spend my life with you! Love you <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-20",
+    mood: "",
+    text: "You are the most amazing woman in the world and I love you so much <3",
+    image: "images/no_image_today.jpg"
   }
 ];
