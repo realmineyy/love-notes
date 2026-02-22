@@ -317,5 +317,11 @@ const messages = [
     mood: "",
     text: "You are the most amazing woman in the world and I love you so much <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-21",
+    mood: "",
+    text: "I love you so much and I am so sorry I forgot to write this until late. Sleep well, I love you so much sweet angel <3",
+    image: "images/no_image_today.jpg"
   }
 ];
