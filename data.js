@@ -329,5 +329,11 @@ const messages = [
     mood: "",
     text: "Even when you're mad at me, I still love you more than life. I'm so lucky to have you and I am sorry that I do sucky things sometimes. I love you so much <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-23",
+    mood: "",
+    text: "Excited to spend prom with you (if you let me). It'll be a fun night fr <3",
+    image: "images/no_image_today.jpg"
   }
 ];
