@@ -335,5 +335,11 @@ const messages = [
     mood: "",
     text: "Excited to spend prom with you (if you let me). It'll be a fun night fr <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-24",
+    mood: "",
+    text: "You are amazing and I love how independent you are <3",
+    image: "images/no_image_today.jpg"
   }
 ];
