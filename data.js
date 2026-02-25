@@ -341,5 +341,11 @@ const messages = [
     mood: "",
     text: "You are amazing and I love how independent you are <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-25",
+    mood: "",
+    text: "You are so smart and I am so proud of everything you have accomplished! Can't wait for many more achievements together <3",
+    image: "images/no_image_today.jpg"
   }
 ];
