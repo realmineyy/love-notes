@@ -347,5 +347,17 @@ const messages = [
     mood: "",
     text: "You are so smart and I am so proud of everything you have accomplished! Can't wait for many more achievements together <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-26",
+    mood: "",
+    text: "You are amazing and I love talking with you <3",
+    image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-27",
+    mood: "",
+    text: "You are the best thing that has ever happened to me. I am so glad to have you in my life and I love you so much <3",
+    image: "images/no_image_today.jpg"
   }
 ];
