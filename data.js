@@ -359,5 +359,11 @@ const messages = [
     mood: "",
     text: "You are the best thing that has ever happened to me. I am so glad to have you in my life and I love you so much <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-02-28",
+    mood: "",
+    text: "I love you so much <3",
+    image: "images/no_image_today.jpg"
   }
 ];
