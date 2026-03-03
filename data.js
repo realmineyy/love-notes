@@ -377,5 +377,11 @@ const messages = [
     mood: "",
     text: "You are such an amazing woman and I can't wait to spend my life with you! I love you so much <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-03-03",
+    mood: "",
+    text: "I am so proud of you everyday! I am so grateful to have someone as amazing as you in my life! <3",
+    image: "images/no_image_today.jpg"
   }
 ];
