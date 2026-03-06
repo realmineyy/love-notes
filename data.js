@@ -389,5 +389,11 @@ const messages = [
     mood: "",
     text: "IM SORRY IM SORRY IM SORRY!!!! Okay now im done with ragebait, love you bunches <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-03-05",
+    mood: "",
+    text: "I am like so like in love with you like its kinda amazing how like in love with you I like am <3",
+    image: "images/no_image_today.jpg"
   }
 ];
