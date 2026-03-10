@@ -401,5 +401,11 @@ const messages = [
     mood: "",
     text: "You are absolutely stunning and an incredible woman. I would marry you tomorrow if you'd let me. I apologize for the break in between the last message and today's, I should've brought my macbook with me! Marry me? <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-03-09",
+    mood: "",
+    text: "I love you so much and I regret ever doing anything that put a strain on our relationship. I hope one day you'll be able to forgive me fully for it but until then I am dedicated to showing you every day that our relationship is worth it. I love you <3",
+    image: "images/no_image_today.jpg"
   }
 ];
