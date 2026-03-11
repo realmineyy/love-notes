@@ -407,5 +407,11 @@ const messages = [
     mood: "",
     text: "I love you so much and I regret ever doing anything that put a strain on our relationship. I hope one day you'll be able to forgive me fully for it but until then I am dedicated to showing you every day that our relationship is worth it. I love you <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-03-10",
+    mood: "",
+    text: "You are so amazing and I can't believe you're with me! I love you so much <3",
+    image: "images/no_image_today.jpg"
   }
 ];
