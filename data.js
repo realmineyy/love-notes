@@ -413,5 +413,11 @@ const messages = [
     mood: "",
     text: "You are so amazing and I can't believe you're with me! I love you so much <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-03-11",
+    mood: "",
+    text: "I am so happy I met you, you make me so happy and I am so lucky to have you in my life. I love you <3",
+    image: "images/no_image_today.jpg"
   }
 ];
