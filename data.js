@@ -419,5 +419,17 @@ const messages = [
     mood: "",
     text: "I am so happy I met you, you make me so happy and I am so lucky to have you in my life. I love you <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-03-12",
+    mood: "",
+    text: "Im so happy to see you tomorrow!! I love you <3",
+    image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-03-11",
+    mood: "",
+    text: "You are the most amazing girl I have ever met, I hope we're together forever! I love you <3",
+    image: "images/no_image_today.jpg"
   }
 ];
