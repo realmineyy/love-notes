@@ -427,9 +427,15 @@ const messages = [
     image: "images/no_image_today.jpg"
   },
   {
-    date: "2026-03-11",
+    date: "2026-03-13",
     mood: "",
     text: "You are the most amazing girl I have ever met, I hope we're together forever! I love you <3",
+    image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-03-14",
+    mood: "",
+    text: "You are the most beautiful girl in the world, and no, your sun rash doesnt change that. I love you so much <3",
     image: "images/no_image_today.jpg"
   }
 ];
