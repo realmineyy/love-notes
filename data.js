@@ -437,5 +437,11 @@ const messages = [
     mood: "",
     text: "You are the most beautiful girl in the world, and no, your sun rash doesnt change that. I love you so much <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-03-15",
+    mood: "",
+    text: "I am so sorry I forgot to leave a note. I just want to say how grateful I am to have such an understanding and forgiving woman like you in my life. You're honesty and grace honestly just leaves me speechless and I am so lucky. I love you so much <3",
+    image: "images/no_image_today.jpg"
   }
 ];
