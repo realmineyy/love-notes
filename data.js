@@ -449,5 +449,11 @@ const messages = [
     mood: "",
     text: "I can't wait for you to come to Ole Miss next year. We are honestly going to have the time of our lives here and I just want to see you more regularly! I love you so much <3",
     image: "images/no_image_today.jpg"
+  },
+  {
+    date: "2026-03-17",
+    mood: "",
+    text: "Happy St. Patricks Day to the woman who loves her ginger. Thanks for always being there for me. I love you <3",
+    image: ""
   }
 ];
