@@ -455,5 +455,11 @@ const messages = [
     mood: "",
     text: "Happy St. Patricks Day to the woman who loves her ginger. Thanks for always being there for me. I love you <3",
     image: ""
+  },
+  {
+    date: "2026-03-18",
+    mood: "",
+    text: "I really hate being on a break, I want to be able to talk to you. But the yin-yang of that thought is that I also want you to have everything you want so if you want space, you're going to get it. I hope you can forgive me. I love you so much <3",
+    image: ""
   }
 ];
