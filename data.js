@@ -467,5 +467,11 @@ const messages = [
     mood: "",
     text: "I am so happy you're coming to Ole Miss next year. Like you don't even understand how excited I am. You're amazing and you're going to do amazing things in life. I love you so much <3",
     image: ""
+  },
+  {
+    date: "2026-03-20",
+    mood: "",
+    text: "You are so understanding and amazing and I absolutely love being with you. I cannot wait for more good things to come! I love you <3",
+    image: ""
   }
 ];
