@@ -473,5 +473,11 @@ const messages = [
     mood: "",
     text: "You are so understanding and amazing and I absolutely love being with you. I cannot wait for more good things to come! I love you <3",
     image: ""
+  },
+  {
+    date: "2026-03-21",
+    mood: "",
+    text: "I am so proud of you for all that you have accomplished. The Stamps Scholarship and getting a full ride is so impressive my little Valedictorian! I love you so much baby <3",
+    image: ""
   }
 ];
