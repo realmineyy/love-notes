@@ -491,5 +491,11 @@ const messages = [
     mood: "",
     text: "I wish I could've taken you and your mom out to dinner. Sorry that you're feeling sick, I hope you feel better soon! I love you <3",
     image: ""
+  },
+  {
+    date: "2026-03-24",
+    mood: "",
+    text: "Can't wait to go to prom with you. You're dress is beautiful, you look amazing! I love you baby <3",
+    image: ""
   }
 ];
