@@ -497,5 +497,11 @@ const messages = [
     mood: "",
     text: "Can't wait to go to prom with you. You're dress is beautiful, you look amazing! I love you baby <3",
     image: ""
+  },
+  {
+    date: "2026-03-25",
+    mood: "",
+    text: "You are the only girl that I would want to spend my days with. I love being with you and I hope it never ends :) I love you so much <3",
+    image: ""
   }
 ];
