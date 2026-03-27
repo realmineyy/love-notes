@@ -503,5 +503,11 @@ const messages = [
     mood: "",
     text: "You are the only girl that I would want to spend my days with. I love being with you and I hope it never ends :) I love you so much <3",
     image: ""
+  },
+  {
+    date: "2026-03-26",
+    mood: "",
+    text: "I believe that we can accomplish long distance and I hope that you chase your dreams wherever they may take you :) I love you so much <3",
+    image: ""
   }
 ];
