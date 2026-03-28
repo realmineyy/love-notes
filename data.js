@@ -509,5 +509,11 @@ const messages = [
     mood: "",
     text: "I believe that we can accomplish long distance and I hope that you chase your dreams wherever they may take you :) I love you so much <3",
     image: ""
+  },
+  {
+    date: "2026-03-27",
+    mood: "",
+    text: "I love you so much and I want to be the best man, boyfriend, and friend that I can be to you. I promise I am going to be more of the man 'you get when you have sex' ;) I love you so much <3",
+    image: ""
   }
 ];
