@@ -527,5 +527,11 @@ const messages = [
     mood: "",
     text: "Last night was ridiculously fun! I hope to do it again sometime :) I love you so much <3",
     image: ""
+  },
+  {
+    date: "2026-03-30",
+    mood: "",
+    text: "I care about you a lot and I want you to have everything that you could ever want in life. Love you lots <3",
+    image: ""
   }
 ];
