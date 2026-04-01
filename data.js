@@ -539,5 +539,11 @@ const messages = [
     mood: "",
     text: "Glad to be back together... I love you lots <3",
     image: ""
+  },
+  {
+    date: "2026-04-01",
+    mood: "",
+    text: "Maybe I do hate you... HAPPY APRIL FOOLS i obviously don't hate you. Love you lots snugglebugs :) (im like cackling writing this btw)",
+    image: ""
   }
 ];
