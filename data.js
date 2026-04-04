@@ -551,5 +551,11 @@ const messages = [
     mood: "",
     text: "April Fools was not fun cuz you made a bad joke. I am not enjoying the holiday anymore. Love you tho <3",
     image: ""
+  },
+  {
+    date: "2026-04-03",
+    mood: "",
+    text: "Really happy to see you. Sorry for the short note, Love you tho <3",
+    image: ""
   }
 ];
