@@ -557,5 +557,11 @@ const messages = [
     mood: "",
     text: "Really happy to see you. Sorry for the short note, Love you tho <3",
     image: ""
+  },
+  {
+    date: "2026-04-04",
+    mood: "",
+    text: "Happy Easter Eve!!! Hope you had an amazing saturday my perfect girl! :) Love you so much sweetheart <3",
+    image: ""
   }
 ];
