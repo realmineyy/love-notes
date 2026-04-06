@@ -563,5 +563,17 @@ const messages = [
     mood: "",
     text: "Happy Easter Eve!!! Hope you had an amazing saturday my perfect girl! :) Love you so much sweetheart <3",
     image: ""
+  },
+  {
+    date: "2026-04-05",
+    mood: "",
+    text: "You are so amazing and I can't wait to spend my life with you! :) Love you so much sweetheart <3",
+    image: ""
+  },
+  {
+    date: "2026-04-06",
+    mood: "",
+    text: "Hope you have an amazing week my beautiful girl! You are the most amazing person ever and, even though i am funnier, ur pretty funny too ig :) Love you so much sweetheart <3",
+    image: ""
   }
 ];
