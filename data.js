@@ -575,5 +575,11 @@ const messages = [
     mood: "",
     text: "Hope you have an amazing week my beautiful girl! You are the most amazing person ever and, even though i am funnier, ur pretty funny too ig :) Love you so much sweetheart <3",
     image: ""
+  },  
+  {
+    date: "2026-04-07",
+    mood: "",
+    text: "You are perfect in every way and I can't believe you're with me sometimes :) Love you bunches darling <3",
+    image: ""
   }
 ];
