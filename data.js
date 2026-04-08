@@ -581,5 +581,11 @@ const messages = [
     mood: "",
     text: "You are perfect in every way and I can't believe you're with me sometimes :) Love you bunches darling <3",
     image: ""
+  },  
+  {
+    date: "2026-04-08",
+    mood: "",
+    text: "You are so amazing and I am so proud of you in all that you have accomplished. I am always here to support you if you need me :) Love you bunches darling <3",
+    image: ""
   }
 ];
