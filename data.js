@@ -587,5 +587,17 @@ const messages = [
     mood: "",
     text: "You are so amazing and I am so proud of you in all that you have accomplished. I am always here to support you if you need me :) Love you bunches darling <3",
     image: ""
+  },  
+  {
+    date: "2026-04-09",
+    mood: "",
+    text: "I am so proud of everything you do and I am so happy to call you my girlfriend. I can't wait to see what the future holds for us! <3 Love you so much",
+    image: ""
+  },  
+  {
+    date: "2026-04-10",
+    mood: "",
+    text: "You are the most amazing thing to ever happen to me. You're just so cool and it's utterly baffling :) LOVE YOU LOTS <3",
+    image: ""
   }
 ];
