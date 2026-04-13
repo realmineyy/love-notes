@@ -599,5 +599,11 @@ const messages = [
     mood: "",
     text: "You are the most amazing thing to ever happen to me. You're just so cool and it's utterly baffling :) LOVE YOU LOTS <3",
     image: ""
+  },  
+  {
+    date: "2026-04-12",
+    mood: "",
+    text: "Missed yesterday's note, but I loved hanging out with you. I love spending time with you and I hope that we can spend our lives together (fingers crossed)! Love you so much <3",
+    image: ""
   }
 ];
