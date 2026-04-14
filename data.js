@@ -605,5 +605,11 @@ const messages = [
     mood: "",
     text: "Missed yesterday's note, but I loved hanging out with you. I love spending time with you and I hope that we can spend our lives together (fingers crossed)! Love you so much <3",
     image: ""
+  },  
+  {
+    date: "2026-04-13",
+    mood: "",
+    text: "You are the prettiest, most beautiful queen ever and I love you so much! I can't wait to see what the future has in store :) LOVE YOU LOTS <3",
+    image: ""
   }
 ];
