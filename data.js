@@ -611,5 +611,17 @@ const messages = [
     mood: "",
     text: "You are the prettiest, most beautiful queen ever and I love you so much! I can't wait to see what the future has in store :) LOVE YOU LOTS <3",
     image: ""
+  },  
+  {
+    date: "2026-04-14",
+    mood: "",
+    text: "You are amazing and I love you so much <3 I can't wait for prom!",
+    image: ""
+  },  
+  {
+    date: "2026-04-15",
+    mood: "",
+    text: "My haircut is scheduled for the morning of prom, which is a risk we will both have to take :) love you <3",
+    image: ""
   }
 ];
