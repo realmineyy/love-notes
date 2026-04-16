@@ -623,5 +623,11 @@ const messages = [
     mood: "",
     text: "My haircut is scheduled for the morning of prom, which is a risk we will both have to take :) love you <3",
     image: ""
+  },  
+  {
+    date: "2026-04-16",
+    mood: "",
+    text: "I am really excited for prom. I feel as if I continue to say this but it's true. Excited to see where the night takes us <3 love you lots!",
+    image: ""
   }
 ];
