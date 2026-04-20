@@ -641,5 +641,17 @@ const messages = [
     mood: "",
     text: "HAPPY PROMMMMM!!!!!! :) <3",
     image: ""
+  },  
+  {
+    date: "2026-04-19",
+    mood: "",
+    text: "I had a lot of fun this weekend! Can't wait for much more to come for us! (P.S. You were not a lot, don't worry, I enjoyed ur presence a lot :) ) Love you lots! <3",
+    image: ""
+  },  
+  {
+    date: "2026-04-20",
+    mood: "",
+    text: "I am really sad to have to leave and I miss you. Hope to see you this weekend (PLEASE TAKE SATURDAY OFF AND COME VISIT ME) :)",
+    image: ""
   }
 ];
