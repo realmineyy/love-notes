@@ -653,5 +653,11 @@ const messages = [
     mood: "",
     text: "I am really sad to have to leave and I miss you. Hope to see you this weekend (PLEASE TAKE SATURDAY OFF AND COME VISIT ME) :)",
     image: ""
+  },  
+  {
+    date: "2026-04-21",
+    mood: "",
+    text: "I can't wait to see you this weekend. We'll see who folds first and also who can get freakier cuz why not and also I know I am so its lowkey wraps for you :)",
+    image: ""
   }
 ];
