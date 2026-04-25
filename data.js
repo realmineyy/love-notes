@@ -671,5 +671,11 @@ const messages = [
     mood: "",
     text: "You're pretty cool, I like you a lot :) love you <3",
     image: ""
+  },  
+  {
+    date: "2026-04-24",
+    mood: "",
+    text: "i like u a lot",
+    image: ""
   }
 ];
