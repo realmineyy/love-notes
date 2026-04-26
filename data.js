@@ -677,5 +677,17 @@ const messages = [
     mood: "",
     text: "i like u a lot",
     image: ""
+  },  
+  {
+    date: "2026-04-25",
+    mood: "",
+    text: "You are one of the most amazing women i have ever had the pleasure of knowing, i love u lots <3",
+    image: ""
+  },  
+  {
+    date: "2026-04-26",
+    mood: "",
+    text: "You are the prettiest, funniest (sorta), most brilliant, most amazing woman in the world. I'd marry u tomorrow if you'd let me! Love you lots <3 :)",
+    image: ""
   }
 ];
