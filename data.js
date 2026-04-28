@@ -689,5 +689,11 @@ const messages = [
     mood: "",
     text: "You are the prettiest, funniest (sorta), most brilliant, most amazing woman in the world. I'd marry u tomorrow if you'd let me! Love you lots <3 :)",
     image: ""
+  },  
+  {
+    date: "2026-04-27",
+    mood: "",
+    text: "You are pretty amazing. I was serious when I said I'd marry you, maybe not right this second, but like, give it a couple days and we can fs <3 ;)",
+    image: ""
   }
 ];
