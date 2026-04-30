@@ -701,5 +701,11 @@ const messages = [
     mood: "",
     text: "You are pretty & cool. I love everything there is to love about u (hint: its everything) <3 :) i love u lots <3",
     image: ""
+  },  
+  {
+    date: "2026-04-29",
+    mood: "",
+    text: "I lowkey hate to write this on here, but I love our video and I want to do another one, maybe if you're down? Anyways, love you pretty girl <3",
+    image: ""
   }
 ];
