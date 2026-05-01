@@ -713,5 +713,11 @@ const messages = [
     mood: "",
     text: "I am like so incredibly in love with you it actually baffles the mind. Words can't express how much I want to see you right this instant. i love you so much <3",
     image: ""
+  },  
+  {
+    date: "2026-05-01",
+    mood: "",
+    text: "You are literally the most amazing girl I've ever met. I am running out of things to say on here because I have said everything there is to say, so now this just serves as a reminder of how awesome you are. have fun in NYC :) i love u lots <3",
+    image: ""
   }
 ];
