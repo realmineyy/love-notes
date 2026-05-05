@@ -731,5 +731,11 @@ const messages = [
     mood: "",
     text: "I appreciate your support tonight and I really needed it, i love you so much <3",
     image: ""
+  },  
+  {
+    date: "2026-05-04",
+    mood: "",
+    text: "Really excited for our date this weekend. I love you so much and mortal kombat will be amazing, loved the chimp movie too <3",
+    image: ""
   }
 ];
