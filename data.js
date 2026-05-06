@@ -737,5 +737,11 @@ const messages = [
     mood: "",
     text: "Really excited for our date this weekend. I love you so much and mortal kombat will be amazing, loved the chimp movie too <3",
     image: ""
+  },  
+  {
+    date: "2026-05-05",
+    mood: "",
+    text: "You are so beautiful and so amazing and so smart, but leaving me on opened lowkey gonna make me crashout so dont do that, okay love you bye <3",
+    image: ""
   }
 ];
