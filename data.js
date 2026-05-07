@@ -743,5 +743,11 @@ const messages = [
     mood: "",
     text: "You are so beautiful and so amazing and so smart, but leaving me on opened lowkey gonna make me crashout so dont do that, okay love you bye <3",
     image: ""
+  },  
+  {
+    date: "2026-05-06",
+    mood: "",
+    text: "butterflies, butterflies in my tummy, excited to see my girlfriend i am, as soon as possible please darling its been so long. i love you tons <3",
+    image: ""
   }
 ];
