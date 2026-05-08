@@ -749,5 +749,11 @@ const messages = [
     mood: "",
     text: "butterflies, butterflies in my tummy, excited to see my girlfriend i am, as soon as possible please darling its been so long. i love you tons <3",
     image: ""
+  },  
+  {
+    date: "2026-05-07",
+    mood: "",
+    text: "you are still the most beautiful girl in every room, nobody can ever take that away from you. i love you so much <3",
+    image: ""
   }
 ];
