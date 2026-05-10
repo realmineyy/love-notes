@@ -755,5 +755,23 @@ const messages = [
     mood: "",
     text: "you are still the most beautiful girl in every room, nobody can ever take that away from you. i love you so much <3",
     image: ""
+  },  
+  {
+    date: "2026-05-08",
+    mood: "",
+    text: "*no note* i was mad",
+    image: ""
+  },  
+  {
+    date: "2026-05-09",
+    mood: "",
+    text: "you are pretty amazing, and somehow managed to make me slightly less mad so that's pretty chill. I love you a lot tho girlie <3 marry me?",
+    image: ""
+  },  
+  {
+    date: "2026-05-10",
+    mood: "",
+    text: "i will get u ur apple watch because you're so beautiful and amazing <3 i love you so much :)",
+    image: ""
   }
 ];
