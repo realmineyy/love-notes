@@ -773,5 +773,17 @@ const messages = [
     mood: "",
     text: "i will get u ur apple watch because you're so beautiful and amazing <3 i love you so much :)",
     image: ""
+  },  
+  {
+    date: "2026-05-11",
+    mood: "",
+    text: "*no note* i was mad... again",
+    image: ""
+  },  
+  {
+    date: "2026-05-12",
+    mood: "",
+    text: "I like you even when im not inside of you so there's always that. i love you a lot <3",
+    image: ""
   }
 ];
