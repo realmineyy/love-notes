@@ -785,5 +785,11 @@ const messages = [
     mood: "",
     text: "I like you even when im not inside of you so there's always that. i love you a lot <3",
     image: ""
+  },  
+  {
+    date: "2026-05-13",
+    mood: "",
+    text: "I would like to hangout and watch a movie in my room tmr morning. That would be a fun thing for us to do since we dont always get my house to ourselves. Love you bunches darling <3",
+    image: ""
   }
 ];
