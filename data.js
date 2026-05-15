@@ -791,5 +791,11 @@ const messages = [
     mood: "",
     text: "I would like to hangout and watch a movie in my room tmr morning. That would be a fun thing for us to do since we dont always get my house to ourselves. Love you bunches darling <3",
     image: ""
+  },  
+  {
+    date: "2026-05-14",
+    mood: "",
+    text: "You are the most beautiful girl in the world and I would love to spend the rest of my life with you <3 Love you bunches baby",
+    image: ""
   }
 ];
