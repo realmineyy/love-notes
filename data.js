@@ -797,5 +797,17 @@ const messages = [
     mood: "",
     text: "You are the most beautiful girl in the world and I would love to spend the rest of my life with you <3 Love you bunches baby",
     image: ""
+  },  
+  {
+    date: "2026-05-15",
+    mood: "",
+    text: "You are absolutely stunning darling, I love you soooo much <3",
+    image: ""
+  },  
+  {
+    date: "2026-05-16",
+    mood: "",
+    text: "Excited to see you tn ;) I'll make sure you have a good time !",
+    image: ""
   }
 ];
