@@ -809,5 +809,17 @@ const messages = [
     mood: "",
     text: "Excited to see you tn ;) I'll make sure you have a good time !",
     image: ""
+  },  
+  {
+    date: "2026-05-17",
+    mood: "",
+    text: "You are the most amazing girlfriend a guy could ask for and I would love to spend my future with you <3 I love you so much :)",
+    image: ""
+  },  
+  {
+    date: "2026-05-18",
+    mood: "",
+    text: "I love you so much and I would love to spend every waking moment with you (however unrealistic). Excited for your graduation! Bringing flowers! I Love you <3",
+    image: ""
   }
 ];
