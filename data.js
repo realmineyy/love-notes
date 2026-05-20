@@ -821,5 +821,17 @@ const messages = [
     mood: "",
     text: "I love you so much and I would love to spend every waking moment with you (however unrealistic). Excited for your graduation! Bringing flowers! I Love you <3",
     image: ""
+  },  
+  {
+    date: "2026-05-19",
+    mood: "",
+    text: "Super excited for your graduation speech, can't wait to see what you have cooked up! Love you so much <3",
+    image: ""
+  },  
+  {
+    date: "2026-05-20",
+    mood: "",
+    text: "GRADUATION DAY YAYYYY!!! Hope you're feeling good and ready to go to get done with your highschool career <3 I love you :)",
+    image: ""
   }
 ];
