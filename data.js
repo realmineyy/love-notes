@@ -833,5 +833,11 @@ const messages = [
     mood: "",
     text: "GRADUATION DAY YAYYYY!!! Hope you're feeling good and ready to go to get done with your highschool career <3 I love you :)",
     image: ""
-  }
+  },  
+  {
+    date: "2026-05-21",
+    mood: "",
+    text: "Hey beautiful, you are amazing and I loved getting ice cream with you. sorry we couldn't finish yk but hey, parks close at sundown ;) I love you so much <3",
+    image: ""
+  }}
 ];
