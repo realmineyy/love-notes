@@ -839,5 +839,11 @@ const messages = [
     mood: "",
     text: "Hey beautiful, you are amazing and I loved getting ice cream with you. sorry we couldn't finish yk but hey, parks close at sundown ;) I love you so much <3",
     image: ""
-  }}
+  },  
+  {
+    date: "2026-05-22",
+    mood: "",
+    text: "You are the most amazing girl in the world ( even though you couldn't come over tn :( ) please come over soon :) I miss you and I love you",
+    image: ""
+  }
 ];
