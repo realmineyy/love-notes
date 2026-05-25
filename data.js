@@ -851,5 +851,11 @@ const messages = [
     mood: "",
     text: "I love you so much and I would love to spend the rest of my life with you. P.S. Check out the song Farmer's Daughter by Rodney Atkins, its the song I was referencing today :)",
     image: ""
+  },  
+  {
+    date: "2026-05-24",
+    mood: "",
+    text: "THANK YOU SO MUCH FOR COMING TO VISIT MY FAMILY!!! THEY LOVED YOU!!! I love you so much sweetheart :)",
+    image: ""
   }
 ];
