@@ -857,5 +857,11 @@ const messages = [
     mood: "",
     text: "THANK YOU SO MUCH FOR COMING TO VISIT MY FAMILY!!! THEY LOVED YOU!!! I love you so much sweetheart :)",
     image: ""
+  },  
+  {
+    date: "2026-05-25",
+    mood: "",
+    text: "You are the most beautiful girl in the world and it's not even close :) I hope you feel the same way about me because I am so bonita :) I love you so much darling :)",
+    image: ""
   }
 ];
