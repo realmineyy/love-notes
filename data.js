@@ -863,5 +863,11 @@ const messages = [
     mood: "",
     text: "You are the most beautiful girl in the world and it's not even close :) I hope you feel the same way about me because I am so bonita :) I love you so much darling :)",
     image: ""
+  },  
+  {
+    date: "2026-05-26",
+    mood: "",
+    text: "I love the braids (they're my favorite) I'll try being brunette more often to compensate for you being such a BADDIE ;) I love you a lot <3",
+    image: ""
   }
 ];
