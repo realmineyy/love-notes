@@ -869,5 +869,11 @@ const messages = [
     mood: "",
     text: "I love the braids (they're my favorite) I'll try being brunette more often to compensate for you being such a BADDIE ;) I love you a lot <3",
     image: ""
+  },  
+  {
+    date: "2026-05-27",
+    mood: "",
+    text: "I CAN'T WAIT FOR YOU TO COME OVER FRIDAY!!! (if you come over, obviously) I would really like to try some things so lowk come over :) I love you <3",
+    image: ""
   }
 ];
