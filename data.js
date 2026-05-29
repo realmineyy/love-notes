@@ -875,5 +875,11 @@ const messages = [
     mood: "",
     text: "I CAN'T WAIT FOR YOU TO COME OVER FRIDAY!!! (if you come over, obviously) I would really like to try some things so lowk come over :) I love you <3",
     image: ""
+  },  
+  {
+    date: "2026-05-28",
+    mood: "",
+    text: "I'm so glad you decided to come over tn <3 I had a blast! Can't wait til you're back from Huntsville! P.S. You're NOT fat, you're a skinny queen :) I love you sweetheart <3",
+    image: ""
   }
 ];
