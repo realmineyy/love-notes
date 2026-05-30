@@ -881,5 +881,11 @@ const messages = [
     mood: "",
     text: "I'm so glad you decided to come over tn <3 I had a blast! Can't wait til you're back from Huntsville! P.S. You're NOT fat, you're a skinny queen :) I love you sweetheart <3",
     image: ""
+  },  
+  {
+    date: "2026-05-29",
+    mood: "",
+    text: "You are the most pretty, most beautiful, most sexy, most gorgeous, most amazing girl in the world and NOBODY should be able to tell you otherwise. I love you so much <3",
+    image: ""
   }
 ];
