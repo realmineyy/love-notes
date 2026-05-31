@@ -887,5 +887,11 @@ const messages = [
     mood: "",
     text: "You are the most pretty, most beautiful, most sexy, most gorgeous, most amazing girl in the world and NOBODY should be able to tell you otherwise. I love you so much <3",
     image: ""
+  },  
+  {
+    date: "2026-05-30",
+    mood: "",
+    text: "You're awesome, love you <3 (sorry this message sucks)",
+    image: ""
   }
 ];
