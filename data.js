@@ -899,5 +899,23 @@ const messages = [
     mood: "",
     text: "You are the most amazing, beautiful girl in the world and I am so lucky to have met and been able to be with you <3 I love you so much",
     image: ""
+  },  
+  {
+    date: "2026-06-01",
+    mood: "",
+    text: "I can't believe that I have known you for as long as I have, I am just so lucky and time has flown by <3 I love you so much",
+    image: ""
+  },  
+  {
+    date: "2026-06-02",
+    mood: "",
+    text: "You are the most amazing girl in the world and i love spending time with you! We need to hangout as soon as possible <3 I love you so much",
+    image: ""
+  },  
+  {
+    date: "2026-06-03",
+    mood: "",
+    text: "BEST BIRTHDAY DATE EVER!!! SORRY THE MOVIE SCARED YOU SO MUCH <3 I love you so much",
+    image: ""
   }
 ];
