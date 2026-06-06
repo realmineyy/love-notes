@@ -917,5 +917,17 @@ const messages = [
     mood: "",
     text: "BEST BIRTHDAY DATE EVER!!! SORRY THE MOVIE SCARED YOU SO MUCH <3 I love you so much",
     image: ""
+  },  
+  {
+    date: "2026-06-04",
+    mood: "",
+    text: "You are the prettiest girl in the world and I can't wait to spend the rest of my life with you! <3 I love you so much",
+    image: ""
+  },  
+  {
+    date: "2026-06-05",
+    mood: "",
+    text: "Happy to spend some time with you! Love you so much and can't wait to see you again <3",
+    image: ""
   }
 ];
