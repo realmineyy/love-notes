@@ -929,5 +929,11 @@ const messages = [
     mood: "",
     text: "Happy to spend some time with you! Love you so much and can't wait to see you again <3",
     image: ""
+  },  
+  {
+    date: "2026-06-06",
+    mood: "",
+    text: "I love you so much and I am so sorry I've been being weird, I promise I will try not to be weird anymore <3",
+    image: ""
   }
 ];
