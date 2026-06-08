@@ -935,5 +935,17 @@ const messages = [
     mood: "",
     text: "I love you so much and I am so sorry I've been being weird, I promise I will try not to be weird anymore <3",
     image: ""
+  },  
+  {
+    date: "2026-06-07",
+    mood: "",
+    text: "You are so amazing and talking to you everyday is a thing that i never want to stop doing! I love you so much <3",
+    image: ""
+  },  
+  {
+    date: "2026-06-08",
+    mood: "",
+    text: "We need to have sex, I want to so bad, ur just so sexy and I wanna tear u apart. Sorry this message was horny, love you <3",
+    image: ""
   }
 ];
