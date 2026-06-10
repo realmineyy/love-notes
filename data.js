@@ -947,5 +947,11 @@ const messages = [
     mood: "",
     text: "We need to have sex, I want to so bad, ur just so sexy and I wanna tear u apart. Sorry this message was horny, love you <3",
     image: ""
+  },  
+  {
+    date: "2026-06-09",
+    mood: "",
+    text: "Tonight was really fun, I love you so much! Maybe u need to relax and cum some and then we can have some more sex cuz honestly i never wanna stop anyways, love you <3",
+    image: ""
   }
 ];
