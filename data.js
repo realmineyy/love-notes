@@ -953,5 +953,11 @@ const messages = [
     mood: "",
     text: "Tonight was really fun, I love you so much! Maybe u need to relax and cum some and then we can have some more sex cuz honestly i never wanna stop anyways, love you <3",
     image: ""
+  },  
+  {
+    date: "2026-06-14",
+    mood: "",
+    text: "Alright, after a brief hiatus notes are back. I apologize for the delay but we were on break and I was giving it time. Anyways, I had a lot of fun last night and I can't wait to see you again. I love you so much <3",
+    image: ""
   }
 ];
