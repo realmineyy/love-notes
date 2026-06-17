@@ -959,5 +959,11 @@ const messages = [
     mood: "",
     text: "Alright, after a brief hiatus notes are back. I apologize for the delay but we were on break and I was giving it time. Anyways, I had a lot of fun last night and I can't wait to see you again. I love you so much <3",
     image: ""
+  },  
+  {
+    date: "2026-06-16",
+    mood: "",
+    text: "I am dedicating myself to being more open with you from now on, I love you too much to give up easily so good luck getting rid of me <3",
+    image: ""
   }
 ];
