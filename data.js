@@ -965,5 +965,17 @@ const messages = [
     mood: "",
     text: "I am dedicating myself to being more open with you from now on, I love you too much to give up easily so good luck getting rid of me <3",
     image: ""
+  },  
+  {
+    date: "2026-06-17",
+    mood: "",
+    text: "You are the most amazing woman in the world and I can't wait to see you after I figure out my work situation! I love you so much <3",
+    image: ""
+  },  
+  {
+    date: "2026-06-18",
+    mood: "",
+    text: "I am glad that we've been able to talk and start to get through our issues properly. I love you so much <3",
+    image: ""
   }
 ];
