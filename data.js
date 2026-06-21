@@ -977,5 +977,17 @@ const messages = [
     mood: "",
     text: "I am glad that we've been able to talk and start to get through our issues properly. I love you so much <3",
     image: ""
+  },  
+  {
+    date: "2026-06-19",
+    mood: "",
+    text: "I cant wait until u get back from Nashville, im excited to see you again! I love you <3",
+    image: ""
+  },  
+  {
+    date: "2026-06-20",
+    mood: "",
+    text: "I love you so much and when you get back we are going to olive garden :) I love you so much <3",
+    image: ""
   }
 ];
