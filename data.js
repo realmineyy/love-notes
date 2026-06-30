@@ -1037,5 +1037,11 @@ const messages = [
     mood: "",
     text: "Gonna miss you in Oxford, i miss you right now :) I love you so much <3",
     image: ""
+  },  
+  {
+    date: "2026-06-29",
+    mood: "",
+    text: "Next time we hangout, I am talking you through some things ;) Love you <3",
+    image: ""
   }
 ];
