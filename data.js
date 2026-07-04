@@ -1061,5 +1061,11 @@ const messages = [
     mood: "",
     text: "I LOVE YOUR NEW HAIR its fucking amazing and I cant wait to get my hands in it ;) I love you a lot <3",
     image: ""
+  },  
+  {
+    date: "2026-07-03",
+    mood: "",
+    text: "You are so amazing and I am so grateful to have you in my life, I can't wait to see what the future holds for us :) I love you a lot <3",
+    image: ""
   }
 ];
