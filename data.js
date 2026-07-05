@@ -1067,5 +1067,11 @@ const messages = [
     mood: "",
     text: "You are so amazing and I am so grateful to have you in my life, I can't wait to see what the future holds for us :) I love you a lot <3",
     image: ""
+  },  
+  {
+    date: "2026-07-04",
+    mood: "",
+    text: "I had a great time with you, would love to see you again tmr :) I love you a lot <3",
+    image: ""
   }
 ];
