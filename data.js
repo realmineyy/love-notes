@@ -1073,5 +1073,11 @@ const messages = [
     mood: "",
     text: "I had a great time with you, would love to see you again tmr :) I love you a lot <3",
     image: ""
+  },  
+  {
+    date: "2026-07-10",
+    mood: "",
+    text: "I missed some days. I am so sorry I got distracted with work and there's really no excuse. I love and miss you so much while im working it actually hurts my heart. I can't wait to see you this weekend, please see me this weekend. I LOVE YOU SO MUCH <3",
+    image: ""
   }
 ];
