@@ -1073,11 +1073,47 @@ const messages = [
     mood: "",
     text: "I had a great time with you, would love to see you again tmr :) I love you a lot <3",
     image: ""
-  },  
+  }, 
+  {
+    date: "2026-07-05",
+    mood: "",
+    text: "I love you so much and you are by far the most beautiful woman in the world <3 Love you lots",
+    image: ""
+  },
+  {
+    date: "2026-07-06",
+    mood: "",
+    text: "Can't wait to see you again, I love spending time with you and I absolutely adore you <3",
+    image: ""
+  },
+  {
+    date: "2026-07-07",
+    mood: "",
+    text: "I may actually be obsessed with you :) I love you a lot <3",
+    image: ""
+  },
+  {
+    date: "2026-07-08",
+    mood: "",
+    text: "I can't wait to spend the rest of my life with you :) I love you a lot <3",
+    image: ""
+  },
+  {
+    date: "2026-07-09",
+    mood: "",
+    text: "You are the most amazing woman in the world and I can't believe you picked me from the herd :) I love you a lot <3",
+    image: ""
+  },
   {
     date: "2026-07-10",
     mood: "",
     text: "I missed some days. I am so sorry I got distracted with work and there's really no excuse. I love and miss you so much while im working it actually hurts my heart. I can't wait to see you this weekend, please see me this weekend. I LOVE YOU SO MUCH <3",
+    image: ""
+  },
+  {
+    date: "2026-07-11",
+    mood: "",
+    text: "I loved spending time with you today, the movie was pretty good too. Can't wait to see you again :) Love you lots <3",
     image: ""
   }
 ];
