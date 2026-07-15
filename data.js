@@ -1121,5 +1121,17 @@ const messages = [
     mood: "",
     text: "I am super excited for our 11 month anniversary celebration (Pseudo 1 year anniversary celebration so i'll be getting you a gift) :) Love you lots <3",
     image: ""
+  },
+  {
+    date: "2026-07-13",
+    mood: "",
+    text: "You are the most amazing girl in the world and I can't believe I have you in my life :) Love you lots <3",
+    image: ""
+  },
+  {
+    date: "2026-07-14",
+    mood: "",
+    text: "I can't wait to see you on Sunday for our date night! I love every moment we spend together :) Love you lots <3",
+    image: ""
   }
 ];
