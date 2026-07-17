@@ -1129,9 +1129,9 @@ const messages = [
     image: ""
   },
   {
-    date: "2026-07-14",
+    date: "2026-07-17",
     mood: "",
-    text: "I can't wait to see you on Sunday for our date night! I love every moment we spend together :) Love you lots <3",
+    text: "I am writing this at 4am. idek if you still check this site. if you do then you'll be reading this right now and that's something ig. idk if we are broken up or u never want to see or hear from me again but this is the only way i thought of to respect your space and give you a message. I love and care about you so much and I would hate to have a life without you. I feel as if I have caused too much heartache and pain for you to ever want to be with me, or trust me, or see me again so this is the final message I will write on this site. It will be up permanently for you to look back at if you wish as it doesn't take much to keep it online. If you're reading this, please come back to me. Anyways, enough of my rambling :) I love you so much and I hope you maybe feel the same <3",
     image: ""
   }
 ];
