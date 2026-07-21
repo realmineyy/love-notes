@@ -1157,5 +1157,17 @@ const messages = [
     mood: "",
     text: "you are the most amazing girl in the world and i cant wait to go to the movies with you tomorrow :) Love you lots <3",
     image: ""
+  },
+  {
+    date: "2026-07-19",
+    mood: "",
+    text: "We're basically a perfect match cuz u hate driving and i love driving so we should basically just get married how does that sound beautiful girl :) Love you lots <3",
+    image: ""
+  },
+  {
+    date: "2026-07-20",
+    mood: "",
+    text: "I am really excited to go shopping. Maybe you'll drive this time? HA, ik im kidding myself there, hope u found that question as funny as I did :) Love you lots <3",
+    image: ""
   }
 ];
