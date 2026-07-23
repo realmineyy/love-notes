@@ -1169,5 +1169,17 @@ const messages = [
     mood: "",
     text: "I am really excited to go shopping. Maybe you'll drive this time? HA, ik im kidding myself there, hope u found that question as funny as I did :) Love you lots <3",
     image: ""
+  },
+  {
+    date: "2026-07-21",
+    mood: "",
+    text: "Gotta go get some flowers for you so that you can have fresh ones for when we build our lego flowers this weekend :) Love you lots <3",
+    image: ""
+  },
+  {
+    date: "2026-07-22",
+    mood: "",
+    text: "Excited to see you again this weekend. This week has been exceptionally miserable at work and seeing you before work today made it all worth it :) Love you lots <3",
+    image: ""
   }
 ];
