@@ -1181,5 +1181,17 @@ const messages = [
     mood: "",
     text: "Excited to see you again this weekend. This week has been exceptionally miserable at work and seeing you before work today made it all worth it :) Love you lots <3",
     image: ""
+  },
+  {
+    date: "2026-07-23",
+    mood: "",
+    text: "You are the most amazing girl in the world and I would love to spend the rest of my life with you. we would probably have a hard time keeping our hands off each other :) Love you lots <3",
+    image: ""
+  },
+  {
+    date: "2026-07-24",
+    mood: "",
+    text: "SO EXCITED TO COME TO YOUR HOUSE, I havent been in a bit so im excited to come over and watch a movie and build some legos (maybe im slightly autistic) :) Love you lots <3",
+    image: ""
   }
 ];
