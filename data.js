@@ -1205,5 +1205,11 @@ const messages = [
     mood: "",
     text: "I wish I couldve seen you today, I can't wait to see you again. Please see me on thursday and we can do whatever you want :) I love you so much <3",
     image: ""
+  },
+  {
+    date: "2026-07-27",
+    mood: "",
+    text: "You are pretty cool tbh and I can't wait to see you on thursday cuz work is just not chill anymore. Miss you tons :) I love you so much <3",
+    image: ""
   }
 ];
