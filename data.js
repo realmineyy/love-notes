@@ -1241,5 +1241,29 @@ const messages = [
     mood: "",
     text: "I am day dreaming abt you all the time while I am here, can't get u out of my head it's starting to be a problem :) I love you so much <3",
     image: ""
+  },
+  {
+    date: "2026-08-02",
+    mood: "",
+    text: "You are the most amazing woman in the world and I can't wait to see how amazing a wife and mother you'll make :) I love you so much <3",
+    image: ""
+  },
+  {
+    date: "2026-08-03",
+    mood: "",
+    text: "I am going to marry you one day, I swear by it :) I love you so much <3",
+    image: ""
+  },
+  {
+    date: "2026-08-04",
+    mood: "",
+    text: "I hate having to go back to work because it means I won't get to see you as much, I hate everything about it :) I love you so much <3",
+    image: ""
+  },
+  {
+    date: "2026-08-05",
+    mood: "",
+    text: "I love you so much and I can't wait to see you on Friday, I hope you have an amazing life and we can spend our lives together :) I love you so much <3",
+    image: ""
   }
 ];
