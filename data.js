@@ -1265,5 +1265,11 @@ const messages = [
     mood: "",
     text: "I love you so much and I can't wait to see you on Friday, I hope you have an amazing life and we can spend our lives together :) I love you so much <3",
     image: ""
+  },
+  {
+    date: "2026-08-06",
+    mood: "",
+    text: "Super excited for our movie on saturday and our lunch date tomorrow! I can't wait to see you again :) I love you so much <3",
+    image: ""
   }
 ];
