@@ -1277,5 +1277,11 @@ const messages = [
     mood: "",
     text: "I am sorry if I was a dick today, I just want to talk through things and I really hate it when anythings wrong between us so please tell me. Anyways, ur the most amazing girl in the world and I want to spend my wedding day with you so there's that :) I love you so much <3",
     image: ""
+  },
+  {
+    date: "2026-08-08",
+    mood: "",
+    text: "I am sorry that I have embarassed you and I promise I will fix the issues, I am sorry that this took so long, you mean so much to me :) I love you so much <3",
+    image: ""
   }
 ];
