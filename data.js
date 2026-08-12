@@ -1283,5 +1283,29 @@ const messages = [
     mood: "",
     text: "I am sorry that I have embarassed you and I promise I will fix the issues, I am sorry that this took so long, you mean so much to me :) I love you so much <3",
     image: ""
+  },
+  {
+    date: "2026-08-09",
+    mood: "",
+    text: "You are the most beautiful girl in the world and I am the luckiest man on Earth to have you in my life :) I love you so much <3",
+    image: ""
+  },
+  {
+    date: "2026-08-10",
+    mood: "",
+    text: "I hope you know how much I love you and its funny to me how you probably won't ever know the true scope of my love for you. Anyways, I hope you have an amazing day :) I love you <3",
+    image: ""
+  },
+  {
+    date: "2026-08-11",
+    mood: "",
+    text: "I am very annoyed about having to work so much these last 2 weeks. I wish I would've told her that I move in earlier so I could stop :) I love you so much <3",
+    image: ""
+  },
+  {
+    date: "2026-08-12",
+    mood: "",
+    text: "I hope you enjoy taking your hair down, I am excited to see what you do with it :) I love you pretty girl <3",
+    image: ""
   }
 ];
