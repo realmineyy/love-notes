@@ -1307,5 +1307,11 @@ const messages = [
     mood: "",
     text: "I hope you enjoy taking your hair down, I am excited to see what you do with it :) I love you pretty girl <3",
     image: ""
+  },
+  {
+    date: "2026-08-13",
+    mood: "",
+    text: "I miss you so much and I wanna see you so bad right now. Like it's actually horrible I want to see you like its getting worse I miss you a lot please come see me :) I love you Genesis <3",
+    image: ""
   }
 ];
