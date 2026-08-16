@@ -1313,5 +1313,17 @@ const messages = [
     mood: "",
     text: "I miss you so much and I wanna see you so bad right now. Like it's actually horrible I want to see you like its getting worse I miss you a lot please come see me :) I love you Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-08-14",
+    mood: "",
+    text: "I can't wait for our date, I love hanging out with you so much and I am so excited to see you!! :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-08-15",
+    mood: "",
+    text: "I had so much fun on our date tonight (even though you cried) I LOVE YOUR GIFT, it is so sweet and I will read them when I am sad to make me un-sad. Thanks so much, you are the best girlfriend in the world. Just to clarify, this is not sarcastic. I mean it and I do love the cards they are amazing and I will cherish them until I am dead, I promise :) I love you Genesis <3",
+    image: ""
   }
 ];
