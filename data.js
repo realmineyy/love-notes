@@ -1331,5 +1331,11 @@ const messages = [
     mood: "",
     text: "I loved all of the cards, I hate that you think I don't like them, I fucking love them. They're so amazingly thoughtful and sentimental and I would never damage them or throw them away or do anything other than read them and tear up :) I love you so much Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-08-17",
+    mood: "",
+    text: "I can't wait to see you tomorrow and I am so excited to possibly get some alone time with you, hopefully... :) I love you so much Genesis <3",
+    image: ""
   }
 ];
