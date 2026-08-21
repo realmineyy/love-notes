@@ -1343,5 +1343,17 @@ const messages = [
     mood: "",
     text: "I am so excited to see you on thursday. I feel like everytime I see you, I just get sad when I have to leave and then im left waiting until the next time I can see you... anyways, you're really sexy, that's a word i should use more to describe you. Also, I love how amazingly brilliant you are. See you thursday  :) I love you so much Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-08-19",
+    mood: "",
+    text: "You are the most beautiful and brilliant and cunning girl in the world. I am so glad to have you in my life and you make me better every single day :) I love you so much Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-08-20",
+    mood: "",
+    text: "It's thundering outside and it's because God knows I am in a sad mood so he's giving me some white noise to help me go to sleep. I am going to miss you a lot Genesis, a month can't pass soon enough :) I love you so much Genesis <3",
+    image: ""
   }
 ];
