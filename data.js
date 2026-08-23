@@ -1355,5 +1355,17 @@ const messages = [
     mood: "",
     text: "It's thundering outside and it's because God knows I am in a sad mood so he's giving me some white noise to help me go to sleep. I am going to miss you a lot Genesis, a month can't pass soon enough :) I love you so much Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-08-21",
+    mood: "",
+    text: "I miss you already and I can't wait to see you next month. Mostly just fucking around with friends to kill time until I can see you again :) I love you so much Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-08-22",
+    mood: "",
+    text: "I hope you have a good time at the bar. I hope you have a good experience and enjoy going out :) I love you so much Genesis <3",
+    image: ""
   }
 ];
