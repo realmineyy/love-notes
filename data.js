@@ -1367,5 +1367,11 @@ const messages = [
     mood: "",
     text: "I hope you have a good time at the bar. I hope you have a good experience and enjoy going out :) I love you so much Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-08-23",
+    mood: "",
+    text: "I hope you have an amazing first day of school tomorrow! :) Love you Genesis <3",
+    image: ""
   }
 ];
