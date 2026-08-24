@@ -1373,5 +1373,11 @@ const messages = [
     mood: "",
     text: "You are the most amazing girlfriend in the world and I cant believe I get to be with you (even if its long distance) and I can't wait to see you next month :) Love you Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-08-24",
+    mood: "",
+    text: "When I wake up in the morning, I miss you. I think of waking up next to you and dream of what my life could be like in the future with you. When I am eating my breakfast, I daydream of making you breakfast in the morning in the kitchen after a long night together. When I get to class, I wish that you were there with me, and I start to miss you now that you're in a different state than me. When I get home from a long day, I wish that you were there with me just to sit and talk with because I miss the comfort of your voice and presence. When I am making dinner, I wish that you were there with me so I could cook for you and make a delicious meal to enjoy together with our family. When I am laying down at night, I wish you were there with me, to feel the warmth of ur skin would be a blessing on a cold night. When I sleep, I dream of being with you again, because the loneliness can only be filled by yearning for the day we move in together. While I am alive, I want to make you as happy as you can be :) I love you more than life Genesis <3",
+    image: ""
   }
 ];
