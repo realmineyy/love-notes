@@ -1371,7 +1371,7 @@ const messages = [
   {
     date: "2026-08-23",
     mood: "",
-    text: "I hope you have an amazing first day of school tomorrow! :) Love you Genesis <3",
+    text: "You are the most amazing girlfriend in the world and I cant believe I get to be with you (even if its long distance) and I can't wait to see you next month :) Love you Genesis <3",
     image: ""
   }
 ];
