@@ -1385,5 +1385,11 @@ const messages = [
     mood: "",
     text: "You are the most amazing woman ever and I love spending time with you. I wish you had come to Ole Miss cuz then we could hangout everyday but I am SO SO proud of you for going to a super prestigious school like Vanderbilt, so proud of you my sweet girl :) I love you Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-08-26",
+    mood: "",
+    text: "I hope you have an AMAZING first day of class! I am so proud of everything you have accomplished and I hope I can join you if I can get in to Vanderbilt Law after I graduate! :) I love you so much Genesis <3",
+    image: ""
   }
 ];
