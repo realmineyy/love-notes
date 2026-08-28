@@ -1391,5 +1391,11 @@ const messages = [
     mood: "",
     text: "I hope you have an AMAZING! first day of class! I am so proud of everything you have accomplished and I hope I can join you if I can get in to Vanderbilt Law after I graduate! :) I love you so much Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-08-27",
+    mood: "",
+    text: "I love you so much and I am so sorry for upsetting you, I promise that I won't lie to you anymore and I will tell the whole truth from now on :) I love you so much Genesis <3",
+    image: ""
   }
 ];
