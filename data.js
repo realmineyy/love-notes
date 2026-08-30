@@ -1397,5 +1397,17 @@ const messages = [
     mood: "",
     text: "I love you so much and I am so sorry for upsetting you, I promise that I won't lie to you anymore and I will tell the whole truth from now on :) I love you so much Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-08-28",
+    mood: "",
+    text: "You are the most amazing girl in the world and I cannot wait to see you again! I have never missed someone as much as I am missing you right now and I hope that we will be together again soon :) I love you so much Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-08-29",
+    mood: "",
+    text: "I am so sorry that these notes took so long to get put up. That new feature is otw shortly, just taking longer than expected as I have some other stuff to finish up :) I love you so much Genesis <3",
+    image: ""
   }
 ];
