@@ -1409,5 +1409,17 @@ const messages = [
     mood: "",
     text: "I am so sorry that these notes took so long to get put up. That new feature is otw shortly, just taking longer than expected as I have some other stuff to finish up :) I love you so much Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-08-30",
+    mood: "",
+    text: "You are so amazing and I am so lucky to have you in my life. I have been missing you so much since we went back to college, I really hope you can come down in September :) I love you tons Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-08-31",
+    mood: "",
+    text: "I can't wait to see you in October, we are gonna have a night. Wish I could come in earlier but I have to get all my school work done that Friday so I can focus on you and get you properly reminded of how amazing I am :) I love you so much Genesis, Miss you tons <3",
+    image: ""
   }
 ];
