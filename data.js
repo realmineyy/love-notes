@@ -1427,5 +1427,11 @@ const messages = [
     mood: "",
     text: "COUNTDOWN TO OUR ANNIVERSARY!! I love you so much and you are the most amazing girl in the world. The smartest. The most caring. The sexiest :) I love you so much Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-09-02",
+    mood: "",
+    text: "I want to give you everything that you have ever wanted in life, I have this like primal urge to buy you things, please help me lol :) I love you a lot Genesis <3",
+    image: ""
   }
 ];
