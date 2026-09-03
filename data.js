@@ -1433,5 +1433,10 @@ const messages = [
     mood: "",
     text: "I want to give you everything that you have ever wanted in life, I have this like primal urge to buy you things, please help me lol :) I love you a lot Genesis <3",
     image: ""
+  }, 
+  {
+    date: "2026-09-03",
+    mood: "",
+    text: "I love talking to you and I can't wait to see you again! I am so happy that you're coming down in September, I miss you a lot :) I love you <3",
   }
 ];
