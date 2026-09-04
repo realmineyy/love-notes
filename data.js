@@ -1438,5 +1438,12 @@ const messages = [
     date: "2026-09-03",
     mood: "",
     text: "I love talking to you and I can't wait to see you again! I am so happy that you're coming down in September, I miss you a lot :) I love you <3",
+    image: ""
+  },
+  {
+    date: "2026-09-04",
+    mood: "",
+    text: "I am so excited to come up to Nashville and see you October 10th and then we can have our fun :) I love you so much <3",
+    image: ""
   }
 ];
