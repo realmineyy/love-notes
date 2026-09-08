@@ -1451,5 +1451,17 @@ const messages = [
     mood: "",
     text: "You are the most amazing girl in the world and I cannot wait to see you in the next couple weeks. Be prepared to get tossed love :) I love you so much <3",
     image: ""
+  },
+  {
+    date: "2026-09-06",
+    mood: "",
+    text: "I can't wait to see you for Halloween. We are gonna do some things probably very drunk. You're gonna look really good, I can't wait :) I love you so much <3",
+    image: ""
+  },
+  {
+    date: "2026-09-07",
+    mood: "",
+    text: "You are the smartest girl in the world and I CANNOT WAIT to see you again. I have been missing you so much and I am like dying to see you :) I love you so much <3",
+    image: ""
   }
 ];
