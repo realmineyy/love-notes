@@ -1,83 +1,75 @@
-document.addEventListener("DOMContentLoaded", () => {
-
-  /* =========================
-     DARK MODE TOGGLE
-  ========================== */
-  const toggle = document.getElementById("darkToggle");
-  if (toggle) {
-    toggle.addEventListener("click", () => {
-      document.body.classList.toggle("dark");
-      toggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
-    });
-  }
-
-  /* =========================
-     TIME TOGETHER (DETAILED)
-  ========================== */
-  const togetherEl = document.getElementById("togetherTime");
-  const anniversaryEl = document.getElementById("anniversaryCountdown");
-
-  const start = new Date(relationship.startDate + "T00:00:00");
-
-  function updateTimeTogether() {
-    const now = new Date();
-    let totalMinutes = Math.floor((now - start) / 60000);
-
-    const minutes = totalMinutes % 60;
-    const totalHours = Math.floor(totalMinutes / 60);
-    const hours = totalHours % 24;
-    const totalDays = Math.floor(totalHours / 24);
-
-    const months = Math.floor(totalDays / 30.44);
-    const daysAfterMonths = totalDays - Math.floor(months * 30.44);
-    const weeks = Math.floor(daysAfterMonths / 7);
-    const days = daysAfterMonths % 7;
-
-    togetherEl.textContent =
-      `${months} months · ${weeks} weeks · ${days} days · ${hours} hours · ${minutes} minutes`;
-
-    // Anniversary countdown
-    let next = new Date(
-      now.getFullYear(),
-      relationship.anniversaryMonth - 1,
-      relationship.anniversaryDay
-    );
-
-    if (now > next) next.setFullYear(now.getFullYear() + 1);
-
-    const daysLeft = Math.ceil((next - now) / 86400000);
-    anniversaryEl.textContent = `${daysLeft} days until our anniversary`;
-  }
-
-  updateTimeTogether();
-  setInterval(updateTimeTogether, 60000);
-
-  /* =========================
-     TODAY'S MESSAGE
-  ========================== */
-  if (messages && messages.length) {
-    const today = messages[messages.length - 1];
-    document.getElementById("todayDate").textContent = today.date;
-    document.getElementById("todayMessage").textContent = today.text;
-  }
-
-  /* =========================
-     RANDOM MEMORY
-  ========================== */
-  const memoryBtn = document.getElementById("randomMemoryBtn");
-  const memoryWrap = document.getElementById("memoryDisplay");
-
-  if (memoryBtn && Array.isArray(memories)) {
-    memoryBtn.addEventListener("click", () => {
-      const m = memories[Math.floor(Math.random() * memories.length)];
-
-      document.getElementById("memoryImage").src = m.image;
-      document.getElementById("memoryImage").alt = m.note;
-      document.getElementById("memoryDate").textContent = m.date;
-      document.getElementById("memoryNote").textContent = m.note;
-
-      memoryWrap.classList.remove("hidden");
-    });
-  }
-
-});
+import {formatDate, validateCollection, timeTogether, randomIndex} from './content-model.mjs';
+const icons={home:'<path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/>',compass:'<circle cx="12" cy="12" r="9"/><path d="m16 8-2.5 5.5L8 16l2.5-5.5z"/>',heart:'<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>',image:'<rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="8" r="1.5"/><path d="m21 15-6-6L5 21"/>',moon:'<path d="M20.8 13A9 9 0 0 1 11 3.2 9 9 0 1 0 20.8 13Z"/>',sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/>','arrow-right':'<path d="M4 12h16m-6-6 6 6-6 6"/>','arrow-up-right':'<path d="M6 18 18 6M6 6h12v12"/>',sparkles:'<path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5zM20 2v4m-2-2h4"/>',x:'<path d="m6 6 12 12M6 18 18 6"/>'};
+Object.assign(icons,{check:'<path d="m5 12 4 4L19 6"/>',search:'<circle cx="10.5" cy="10.5" r="7.5"/><path d="m16 16 5 5"/>',shuffle:'<path d="M3 5h3c4 0 8 14 12 14h3m-4-4 4 4-4 4M3 19h3c2 0 4-4 5-7m3-4c1-2 2-3 4-3h3m-4-4 4 4-4 4"/>','arrow-left':'<path d="M20 12H4m6-6-6 6 6 6"/>'});
+function paintIcons(root=document){root.querySelectorAll('[data-icon]').forEach(e=>{e.innerHTML=`<svg viewBox="0 0 24 24" aria-hidden="true">${icons[e.dataset.icon]||icons.heart}</svg>`;});}
+const $=(selector,root=document)=>root.querySelector(selector);
+function node(tag,className,text){const el=document.createElement(tag);if(className)el.className=className;if(text!==undefined)el.textContent=text;return el;}
+function icon(name){const el=node('span');el.dataset.icon=name;paintIcons({querySelectorAll:()=>[el]});return el;}
+function photo(src,alt,className=''){const el=node('img',className);el.src=src;el.alt=alt;el.loading='lazy';el.decoding='async';el.addEventListener('error',()=>{el.hidden=true;});return el;}
+function intro(view,eyebrow,title,description){view.innerHTML=`<div class="collection-intro reveal"><p class="eyebrow">${eyebrow}</p><h1 id="${view.id}-heading">${title}</h1><p class="intro-description">${description}</p></div>`;}
+paintIcons();
+const latest=messages.at(-1);
+if(latest){$('#today-message').textContent=latest.text;$('#today-date').textContent=formatDate(latest.date);$('#today-date').dateTime=latest.date;}
+else{$('#today-message').textContent='Your first letter is on its way.';}
+$('#note-number').textContent=`No. ${String(messages.length).padStart(3,'0')}`;
+function tick(){const t=timeTogether(relationship);$('#together-time').textContent=`${t.days} days of you & me`;$('#anniversary-countdown').textContent=t.until===0?'Happy anniversary, my love.':`${t.until} ${t.until===1?'day':'days'} until our anniversary`;for(const key of ['days','hours','minutes']){const el=$(`#time-${key}`);if(el)el.textContent=t[key];}}
+tick();setInterval(tick,60000);
+const themeButton=$('#theme-toggle');
+function applyTheme(theme){document.documentElement.dataset.theme=theme;themeButton.setAttribute('aria-label',theme==='dark'?'Switch to day mode':'Switch to night mode');$('[data-icon]',themeButton).dataset.icon=theme==='dark'?'sun':'moon';paintIcons(themeButton);$('meta[name="theme-color"]').content=theme==='dark'?'#201b21':'#f9f5ef';}
+try{applyTheme(localStorage.getItem('love-notes-theme')||'light')}catch{applyTheme('light')}
+themeButton.addEventListener('click',()=>{const theme=document.documentElement.dataset.theme==='dark'?'light':'dark';applyTheme(theme);try{localStorage.setItem('love-notes-theme',theme)}catch{}});
+const dialog=$('#detail-dialog'),dialogContent=$('#dialog-content');
+function openDialog(content){dialogContent.replaceChildren(content);paintIcons(dialogContent);if(!dialog.open){dialog.showModal();document.body.style.overflow='hidden';}}
+$('#close-dialog').addEventListener('click',()=>dialog.close());
+dialog.addEventListener('close',()=>{document.body.style.overflow='';});
+dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
+let bucketItems=[],bucketFilter='planned',jarItems=[],lastJar=-1,drawing=false;
+const loaded={bucket:false,jar:false};
+async function fetchCollection(kind){const name=kind==='jar'?'little-things':'bucket-list';const response=await fetch(`collections/${name}.json`,{cache:'no-cache'});if(!response.ok)throw new Error('Could not load collection.');return validateCollection(await response.json(),kind);}
+function errorState(container,retry){container.replaceChildren();const wrap=node('div','collection-status');wrap.setAttribute('role','status');wrap.append(node('p','','This little corner couldn’t load. Let’s try again.'));const button=node('button','retry-button','Try again');button.addEventListener('click',retry);wrap.append(button);container.append(wrap);}
+const someday=$('#someday');
+intro(someday,'YOU + ME + SOMEDAY','So many things.<br><em>All with you.</em>','A place for the little plans, the big adventures, and everything in between.');
+const bucketLayout=node('div','bucket-layout');
+bucketLayout.innerHTML='<div class="segmented" aria-label="Bucket-list view"><button data-filter="planned" aria-pressed="true">Someday <span id="planned-count">0</span></button><button data-filter="completed" aria-pressed="false">We did it <span id="completed-count">0</span></button></div><div id="bucket-content" aria-live="polite"></div>';
+someday.append(bucketLayout);
+bucketLayout.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{bucketFilter=button.dataset.filter;bucketLayout.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));renderBucket();}));
+function renderBucket(){
+  $('#planned-count').textContent=bucketItems.filter(i=>i.status==='planned').length;$('#completed-count').textContent=bucketItems.filter(i=>i.status==='completed').length;
+  const container=$('#bucket-content');container.replaceChildren();
+  if(!loaded.bucket){container.append(node('p','collection-status','Gathering our little plans…'));return;}
+  const items=bucketItems.filter(i=>i.status===bucketFilter).sort((a,b)=>(b.completedDate||b.date).localeCompare(a.completedDate||a.date));
+  if(!items.length){const empty=node('div','empty-state');const circle=node('div','empty-symbol');circle.append(icon(bucketFilter==='planned'?'compass':'check'));empty.append(circle,node('h2','',bucketFilter==='planned'?'Our next chapter is unwritten.':'From someday to remember when.'),node('p','',bucketFilter==='planned'?'The first idea is on its way. There’s a whole world I want to see with you.':'As we make our plans happen, we’ll keep those memories right here.'));container.append(empty,node('div','empty-footnote',bucketFilter==='planned'?'Anywhere, as long as it’s with you.':'The best part will be doing it together.'));return;}
+  const grid=node('div','bucket-grid');
+  items.forEach(item=>{const card=node('button','bucket-card');card.setAttribute('aria-label',`Read ${item.title}`);if(item.image)card.append(photo(item.image,item.title,'bucket-photo'));card.append(node('span','category',item.category||'You & me'),node('h2','',item.title));if(item.description)card.append(node('p','',item.description));const footer=node('div','bucket-card-footer');const badge=node('span',item.status==='completed'?'completed-badge':'',item.status==='completed'?'We did it':'One day, with you');if(item.status==='completed')badge.prepend(icon('check'));footer.append(badge,icon('arrow-up-right'));card.append(footer);card.addEventListener('click',()=>openBucket(item));grid.append(card);});container.append(grid);
+}
+function openBucket(item){const content=node('article');content.append(node('p','eyebrow',item.category||'YOU & ME'));const title=node('h2','',item.title);title.id='dialog-title';content.append(title);const date=node('p','dialog-date',item.status==='completed'?`We did it · ${formatDate(item.completedDate)}`:`Added ${formatDate(item.date)}`);content.append(date);if(item.description)content.append(node('p','',item.description));if(item.image)content.append(photo(item.image,item.title,'bucket-photo'));if(item.status==='completed'&&item.memory){const memory=node('section','dialog-memory');memory.append(node('h3','','I want to remember…'),node('p','',item.memory));content.append(memory);}openDialog(content);}
+async function loadBucket(){renderBucket();try{bucketItems=await fetchCollection('bucket');loaded.bucket=true;renderBucket();}catch{loaded.bucket=false;errorState($('#bucket-content'),loadBucket);}}
+const jar=$('#jar');
+intro(jar,'THE LITTLE THINGS I NOTICE','It’s the little things<br>that make you <em>you.</em>','A growing collection of all the tiny reasons I love you.');
+const jarSpace=node('div','jar-space');
+jarSpace.innerHTML='<div class="jar-scene"><button class="jar-button" id="jar-button" aria-label="Give the keepsake jar a gentle shake"><img src="assets/empty-keepsake-jar.png" width="1254" height="1254" loading="lazy" alt="An empty glass keepsake jar tied with a cherry ribbon"><span class="slip-count" hidden></span></button><span class="jar-sidenote" aria-hidden="true">a little<br>love <span>↙</span></span><span class="flying-note" aria-hidden="true">♡</span></div><div id="jar-state" aria-live="polite"><p class="collection-status">Finding the little things…</p></div>';
+jar.append(jarSpace);$('#jar-button').addEventListener('click',drawNote);
+function renderJar(){const state=$('#jar-state');state.replaceChildren();const count=jarItems.length;const countEl=$('.slip-count');countEl.hidden=!count;countEl.textContent=`${count} ${count===1?'little thing':'little things'}`;$('#jar-button').setAttribute('aria-label',count?'Draw a little note from the jar':'Give the empty keepsake jar a gentle shake');$('#jar-button img').alt=count?'A glass keepsake jar tied with a cherry ribbon':'An empty glass keepsake jar tied with a cherry ribbon';if(!count){state.append(node('h2','jar-title','A little jar. So much room for love.'),node('p','jar-empty-copy','Empty for now. Soon, a little thing I love about you will find its way inside.'));const button=node('button','outline-button jar-action','Give it a little shake');button.prepend(icon('sparkles'));button.addEventListener('click',drawNote);state.append(button,node('p','empty-footnote','The first little thing is on its way.'));}else{state.append(node('p','jar-caption',`${count} little ${count===1?'reason':'reasons'}, and counting.`));const button=node('button','primary-button jar-action','Pick a little note');button.prepend(icon('heart'));button.addEventListener('click',drawNote);state.append(button,node('p','jar-empty-copy','Reach in. There’s something I want you to know.'));}}
+async function loadJar(){try{jarItems=await fetchCollection('jar');loaded.jar=true;renderJar();}catch{loaded.jar=false;errorState($('#jar-state'),loadJar);}}
+function pickNote(){lastJar=randomIndex(jarItems.length,lastJar);return jarItems[lastJar];}
+function showJarNote(){const item=pickNote();if(!item)return;const content=node('article','jar-note-dialog');const heart=node('span','note-heart','♡');heart.setAttribute('aria-hidden','true');content.append(heart,node('p','eyebrow',`LITTLE THING NO. ${String(lastJar+1).padStart(2,'0')}`));const title=node('h2','',item.text);title.id='dialog-title';content.append(title);if(item.image)content.append(photo(item.image,'A photo to go with this little thing'));const time=node('time','',formatDate(item.date));time.dateTime=item.date;content.append(time);if(jarItems.length>1){const next=node('button','text-link','One more little thing');next.append(icon('arrow-right'));next.addEventListener('click',()=>{showJarNote();$('#dialog-title').tabIndex=-1;$('#dialog-title').focus();});content.append(next);}openDialog(content);}
+function drawNote(){if(drawing||!loaded.jar)return;drawing=true;const btn=$('#jar-button'),empty=!jarItems.length;btn.classList.add(empty?'empty-wiggle':'drawing');jarSpace.querySelectorAll('button').forEach(b=>b.disabled=true);const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;if(!empty)$('.flying-note').classList.add('animate');setTimeout(()=>{btn.classList.remove('empty-wiggle','drawing');$('.flying-note').classList.remove('animate');jarSpace.querySelectorAll('button').forEach(b=>b.disabled=false);drawing=false;if(!empty&&currentView==='jar')showJarNote();else if(empty){const note=$('.empty-footnote',jarSpace);if(note)note.textContent='Just a little patience, my favorite person. ♡';}},reduced?20:850);}
+const us=$('#memories');
+intro(us,'OUR FAVORITE KIND OF HISTORY','All these moments.<br><em>All ours.</em>','The days I wish I could hold on to a little longer.');
+const memoryLayout=node('div','memory-layout');memoryLayout.innerHTML='<div><button class="polaroid" id="memory-photo-button" aria-label="Open this memory"><img id="memory-photo" alt=""><span class="polaroid-caption">you, me & this moment <span aria-hidden="true">♡</span></span></button><div class="memory-controls"><div class="memory-pagination" aria-hidden="true"></div><button id="another-memory" class="outline-button"><span data-icon="shuffle"></span> Another little memory</button></div></div><div class="memory-text" aria-live="polite"><p class="eyebrow">A MOMENT TO KEEP</p><h2>Remember this?</h2><p id="memory-note"></p><time id="memory-date"></time></div>';
+us.append(memoryLayout);const timeBlock=node('section','time-keepsake');timeBlock.innerHTML='<h2>My favorite time is ours.</h2><div class="time-stats"><div class="time-stat"><strong id="time-days"></strong><span>days</span></div><div class="time-stat"><strong id="time-hours"></strong><span>hours</span></div><div class="time-stat"><strong id="time-minutes"></strong><span>minutes</span></div></div><p class="since-line"></p>';
+us.append(timeBlock);$('.since-line').textContent=`You & me, since ${formatDate(relationship.startDate)}.`;tick();
+let memoryIndex=0;
+function renderMemory(){const memory=memories[memoryIndex];if(!memory){memoryLayout.replaceChildren(node('p','collection-status','Our first photo memory is on its way.'));return;}const img=$('#memory-photo');img.hidden=false;img.src=memory.image;img.alt=memory.note;img.onerror=()=>{img.hidden=true;};$('#memory-note').textContent=memory.note;$('#memory-date').textContent=memory.date;$('#memory-date').hidden=!memory.date;const dots=$('.memory-pagination');dots.replaceChildren(...memories.map((_,i)=>node('span','memory-dot'+(i===memoryIndex?' current':''))));$('#another-memory').hidden=memories.length<2;}
+$('#another-memory').addEventListener('click',()=>{memoryIndex=randomIndex(memories.length,memoryIndex);renderMemory();const card=$('#memory-photo-button');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)card.animate([{opacity:.4,transform:'translateY(8px) rotate(2deg)'},{opacity:1,transform:'translateY(0) rotate(-3deg)'}],{duration:450,easing:'ease-out'});});
+$('#memory-photo-button').addEventListener('click',()=>{const memory=memories[memoryIndex];if(!memory)return;const content=node('article','dialog-memory');const title=node('h2','','A moment to keep');title.id='dialog-title';content.append(title,photo(memory.image,memory.note),node('p','',memory.note));if(memory.date)content.append(node('p','dialog-date',memory.date));openDialog(content);});renderMemory();
+const archive=$('#archive');
+archive.innerHTML='<a class="text-link archive-header" href="#today"><span data-icon="arrow-left"></span> Back to today</a><div class="collection-intro archive-intro"><p class="eyebrow">EVERY WORD, KEPT SAFE</p><h1 id="archive-heading">Love, <em>collected.</em></h1><p class="intro-description">Every little note, from the very beginning.</p></div><div class="archive-tools"><label class="search-field"><span class="sr-only">Search notes</span><span data-icon="search"></span><input id="archive-search" type="search" placeholder="Find a little note…" autocomplete="off"></label><label class="sr-only" for="archive-month">Filter by month</label><select id="archive-month"><option value="">All months</option></select></div><p class="archive-result-count" aria-live="polite"></p><div class="archive-list"></div><button class="outline-button archive-more">A few more notes <span data-icon="arrow-right"></span></button>';
+const sortedNotes=[...messages].reverse();const months=[...new Set(sortedNotes.map(m=>m.date.slice(0,7)))];months.forEach(month=>{const option=node('option','',new Intl.DateTimeFormat('en-US',{month:'short',year:'numeric'}).format(new Date(month+'-15T12:00:00')));option.value=month;$('#archive-month').append(option);});
+let shownNotes=20;
+function renderArchive(){const query=$('#archive-search').value.trim().toLocaleLowerCase(),month=$('#archive-month').value;const filtered=sortedNotes.filter(m=>(!month||m.date.startsWith(month))&&(!query||`${m.text} ${m.date} ${formatDate(m.date)}`.toLocaleLowerCase().includes(query)));$('.archive-result-count').textContent=`${filtered.length} ${filtered.length===1?'note':'notes'}${query||month?' found':' to come back to'}`;const list=$('.archive-list');list.replaceChildren();if(!filtered.length){const empty=node('div','empty-state');empty.append(node('h2','','No notes found.'),node('p','','Try another word or a different month.'));list.append(empty);}filtered.slice(0,shownNotes).forEach(m=>{const article=node('article','archive-note');const time=node('time','',formatDate(m.date));time.dateTime=m.date;article.append(time,node('p','',m.text));list.append(article);});$('.archive-more').hidden=filtered.length<=shownNotes;}
+$('#archive-search').addEventListener('input',()=>{shownNotes=20;renderArchive();});$('#archive-month').addEventListener('change',()=>{shownNotes=20;renderArchive();});$('.archive-more').addEventListener('click',()=>{const firstNew=shownNotes;shownNotes+=20;renderArchive();const note=$('.archive-list').children[firstNew];if(note){note.tabIndex=-1;note.focus({preventScroll:true});}});renderArchive();paintIcons();
+const routeTitles={today:'For you',someday:'Someday, with you',jar:'Little things',memories:'Our memories',archive:'Love, collected'};
+let currentView='today';const scrollPositions={};
+function navigate(initial=false){const target=location.hash.slice(1)||'today';const id=Object.hasOwn(routeTitles,target)?target:'today';if(!initial)scrollPositions[currentView]=scrollY;currentView=id;document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==id);document.querySelectorAll('.bottom-nav a').forEach(a=>{if(a.hash===`#${id==='archive'?'today':id}`)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});document.title=`${routeTitles[id]} · Love Notes`;if(dialog.open)dialog.close();scrollTo({top:initial?0:(scrollPositions[id]||0),behavior:'instant'});if(!initial)$('#main').focus({preventScroll:true});if(id==='someday'&&!loaded.bucket)loadBucket();if(id==='jar'&&!loaded.jar)loadJar();}
+addEventListener('hashchange',()=>navigate());navigate(true);

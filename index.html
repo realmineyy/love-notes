@@ -1,2 +1,63 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><meta name="theme-color" content="#f9f5ef"><title>Love Notes · Back soon</title><style>*{box-sizing:border-box}body{margin:0;min-height:100svh;display:grid;place-items:center;background:#f9f5ef;color:#49313a;font-family:Georgia,serif;text-align:center;padding:28px}.heart{font-size:48px;color:#972b40}h1{font-weight:400;font-size:34px;margin:22px 0 14px}p{font-family:system-ui,sans-serif;font-size:16px;line-height:1.7;color:#786570;max-width:260px;margin:auto}</style></head><body><main><div class="heart" aria-hidden="true">♡</div><h1>A little pause.</h1><p>This little corner is taking a short break.<br>Back soon, with love.</p></main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f9f5ef">
+  <meta name="description" content="Our little corner of the world. Love notes, memories, and everything still to come.">
+  <title>For you · Love Notes</title>
+  <link rel="icon" href="assets/heart.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="memories.js" defer></script>
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="app-shell">
+  <header class="site-header">
+    <a class="wordmark" href="#today" aria-label="Love Notes home"><span class="brand-heart" aria-hidden="true">♡</span> love notes<span class="brand-period">.</span></a>
+    <button class="icon-button" id="theme-toggle" aria-label="Switch to night mode"><span data-icon="moon"></span></button>
+  </header>
+  <main id="main" tabindex="-1">
+    <section id="today" class="view" aria-labelledby="today-heading">
+      <div class="intro reveal">
+        <p class="eyebrow">OUR LITTLE CORNER OF THE WORLD</p>
+        <h1 id="today-heading">Always, <em>for you.</em></h1>
+        <div class="together-line"><span class="tiny-heart" aria-hidden="true">♥</span><span id="together-time"></span></div>
+      </div>
+      <div class="home-grid">
+        <div class="letter-group reveal">
+          <div class="section-label"><span>A NOTE FOR YOU</span><span id="note-number"></span></div>
+          <article class="daily-letter">
+            <div class="letter-top"><time id="today-date"></time><span class="postage" aria-hidden="true">♡<small>WITH LOVE</small></span></div>
+            <h2>My favorite person,</h2>
+            <p class="letter-text" id="today-message"></p>
+            <div class="letter-signoff"><span>With all my love,</span><span class="signature">me <i>♡</i></span></div>
+          </article>
+          <a class="text-link archive-link" href="#archive">Every note, kept here <span data-icon="arrow-right"></span></a>
+        </div>
+        <div class="home-aside">
+          <a class="anniversary-card reveal" href="#memories"><span class="anniversary-icon" data-icon="sparkles"></span><div><p id="anniversary-countdown"></p><span>Another year of us.</span></div><span data-icon="arrow-up-right"></span></a>
+          <div class="section-heading reveal"><h2>Our next chapters</h2><span class="small-script">so much still to come</span></div>
+          <a class="chapter-card someday-teaser reveal" href="#someday"><div class="chapter-icon" data-icon="compass"></div><div><span class="eyebrow">YOU + ME + SOMEDAY</span><h3>Things I want<br>to do with you.</h3></div><span class="round-arrow" data-icon="arrow-up-right"></span></a>
+          <a class="chapter-card jar-teaser reveal" href="#jar"><div class="chapter-icon" data-icon="heart"></div><div><span class="eyebrow">THE LITTLE THINGS</span><h3>A whole jar of<br>reasons it’s you.</h3></div><span class="round-arrow" data-icon="arrow-up-right"></span></a>
+        </div>
+      </div>
+    </section>
+    <section id="someday" class="view" aria-labelledby="someday-heading" hidden></section>
+    <section id="jar" class="view" aria-labelledby="jar-heading" hidden></section>
+    <section id="memories" class="view" aria-labelledby="memories-heading" hidden></section>
+    <section id="archive" class="view" aria-labelledby="archive-heading" hidden></section>
+  </main>
+</div>
+<nav class="bottom-nav" aria-label="Main navigation">
+  <a href="#today" aria-current="page"><span data-icon="home"></span><span>Today</span></a>
+  <a href="#someday"><span data-icon="compass"></span><span>Someday</span></a>
+  <a href="#jar"><span data-icon="heart"></span><span>Little things</span></a>
+  <a href="#memories"><span data-icon="image"></span><span>Us</span></a>
+</nav>
+<dialog id="detail-dialog" aria-labelledby="dialog-title"><div class="dialog-surface"><button id="close-dialog" class="icon-button dialog-close" aria-label="Close"><span data-icon="x"></span></button><div id="dialog-content"></div></div></dialog>
+<noscript><p class="noscript">Turn on JavaScript to read your notes and memories.</p></noscript>
+</body>
+</html>

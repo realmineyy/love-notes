@@ -1,7 +1,0 @@
-exclude:
-  - data.js
-  - main.js
-  - archive.js
-  - memories.js
-  - images
-  - style.css
