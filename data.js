@@ -1463,5 +1463,11 @@ const messages = [
     mood: "",
     text: "You are the smartest girl in the world and I CANNOT WAIT to see you again. I have been missing you so much and I am like dying to see you :) I love you so much <3",
     image: ""
+  },
+  {
+    date: "2026-09-08",
+    mood: "",
+    text: "I love how successful you are and I love how much you strive to make yourself better as a woman, partner, friend, and person :) I love you so much Genesis <3",
+    image: ""
   }
 ];
