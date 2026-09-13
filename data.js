@@ -1481,5 +1481,17 @@ const messages = [
     mood: "",
     text: "I just adore you and I want to spend the rest of my life with you if you'd do me such a pleasure :) I love you so much Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-09-11",
+    mood: "",
+    text: "I am so excited to see you and I am grateful to have you in my life. i think abt you every day :) I love you so much Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-09-12",
+    mood: "",
+    text: "You are my favorite person in the world and I can't wait to spend my life with you if you'll have me :) I love you so much Genesis <3",
+    image: ""
   }
 ];
