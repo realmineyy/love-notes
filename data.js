@@ -1493,5 +1493,11 @@ const messages = [
     mood: "",
     text: "You are my favorite person in the world and I can't wait to spend my life with you if you'll have me :) I love you so much Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-09-13",
+    mood: "",
+    text: "I can't wait to see you in 2 weeks, I'm counting down the days. Also, it's our anniversary tomorrow and maybe we should  try and do something for it. Just a thought :) I love you so much Genesis <3",
+    image: ""
   }
 ];
