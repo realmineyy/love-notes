@@ -1499,5 +1499,11 @@ const messages = [
     mood: "",
     text: "I can't wait to see you in 2 weeks, I'm counting down the days. Also, it's our anniversary tomorrow and maybe we should  try and do something for it. Just a thought :) I love you so much Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-09-14",
+    mood: "",
+    text: "You will get an anniversary note tomorrow, because of this, you will not be getting a note today. My apologies, gotta save it for tomorrow :) love you tho <3",
+    image: ""
   }
 ];
