@@ -1511,5 +1511,11 @@ const messages = [
     mood: "HAPPY ANNIVERSARY",
     text: "Today marks 365 days of us together. 365 days of love. 365 days of tears. 365 days of fights. 365 days of distance. Now, maybe it marks a year of a lot of pain, and maybe it marks a year of a lot of joy, but I hate thinking about it that way. Today, on this day, 1 year ago, you said yes to being my girlfriend. And today, 2 years from now, hopefully you'll say yes to being my wife. And today, 10 years from now, maybe we'll be introducing our baby girl into the world. And today, 60 years from now, we'll be floating on the water and enjoying the sunset as time passes by sitting next to each other. And today, on this day, I sit writing this to you as a promise to always love and care for you. To always cherish and protect you. To always listen and do for you. To always cook and clean for you. To always wake you up in the morning with a smile on my face knowing that I just woke up next to you. And today, I remember all of the good times we have had together, and pray that God protects us as we see all the good times ahead. I love you Genesis. Today. Tomorrow. Forever. <3",
     image: ""
+  },
+  {
+    date: "2026-09-16",
+    mood: "",
+    text: "I love you so much and I am so proud of how hard you work and how well you compose yourself. I am so proud of you over at Vanderbilt working your ass off right now :) I love you so much and I am rooting for you <3",
+    image: ""
   }
 ];
