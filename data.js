@@ -1517,5 +1517,11 @@ const messages = [
     mood: "",
     text: "I love you so much and I am so proud of how hard you work and how well you compose yourself. I am so proud of you over at Vanderbilt working your ass off right now :) I love you so much and I am rooting for you <3",
     image: ""
+  },
+  {
+    date: "2026-09-17",
+    mood: "",
+    text: "I can't wait to see you next week! I hope we get to spend a decent bit of time together :) I love you so much and I am rooting for you <3",
+    image: ""
   }
 ];
