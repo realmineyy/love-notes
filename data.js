@@ -1523,5 +1523,23 @@ const messages = [
     mood: "",
     text: "I can't wait to see you next week! I hope we get to spend a decent bit of time together :) I love you so much and I am rooting for you <3",
     image: ""
+  },
+  {
+    date: "2026-09-18",
+    mood: "",
+    text: "You are the most beautiful girl in the world and I can't wait until I get to see you in person :) I love you so much <3",
+    image: ""
+  },
+  {
+    date: "2026-09-19",
+    mood: "",
+    text: "You are the most amazing person in my life and I love you more every single day :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-09-20",
+    mood: "",
+    text: "YAY less than a week until I get to see you! I am so excited I'm like shaking :) I love you Genesis <3",
+    image: ""
   }
 ];
