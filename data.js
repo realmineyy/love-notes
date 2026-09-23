@@ -1547,5 +1547,17 @@ const messages = [
     mood: "",
     text: "Only 5 days until I get to see you. I am being really impatient about it. I can't shut up about it. I am so excited :) I love you Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-09-22",
+    mood: "",
+    text: "4 Days left! You're going to do amazing on you're test! Don't sweat it, you're the smartest girl in the world :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-09-23",
+    mood: "",
+    text: "3 MORE DAYS! I only have to suffer through 3 more days without seeing you. You have no idea how excited I am right now :) I love you Genesis <3",
+    image: ""
   }
 ];
