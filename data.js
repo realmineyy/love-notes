@@ -1559,5 +1559,11 @@ const messages = [
     mood: "",
     text: "3 MORE DAYS! I only have to suffer through 3 more days without seeing you. You have no idea how excited I am right now :) I love you Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-09-24",
+    mood: "",
+    text: "2 DAYS LEFT! I'm like tingling right now just thinking about you being here. I am so fucking excited to see you, please hurry up :) I love you Genesis <3",
+    image: ""
   }
 ];
