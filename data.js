@@ -1565,5 +1565,29 @@ const messages = [
     mood: "",
     text: "2 DAYS LEFT! I'm like tingling right now just thinking about you being here. I am so fucking excited to see you, please hurry up :) I love you Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-09-25",
+    mood: "",
+    text: "1 DAY LEFT! I am being so impatient about this im ngl. I wish you could just teleport, that would be a lot easier :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-09-26",
+    mood: "",
+    text: "I have been waiting so impatiently for you to get here. Please hurry up, I'm tryna get you tossed :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-09-27",
+    mood: "",
+    text: "I had such a fun time this weekend, I can't wait to do it again :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-09-28",
+    mood: "",
+    text: "I miss you already. I was sad to see you go but I am really glad that I did get to see you. Counting down the days until I get to Nashville :) I love you Genesis <3",
+    image: ""
   }
 ];
