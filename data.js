@@ -1589,5 +1589,17 @@ const messages = [
     mood: "",
     text: "I miss you already. I was sad to see you go but I am really glad that I did get to see you. Counting down the days until I get to Nashville :) I love you Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-09-29",
+    mood: "",
+    text: "Hey beautiful. I can't wait to see you next weekend, we're gonna have an amazing time! I miss you so much :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-09-30",
+    mood: "",
+    text: "I am sorry that notes have been lacking the last couple days. I got really distracted with school which is no excuse because you are insanely important to me and a serious priority in my life. I miss you everyday :) I love you Genesis <3",
+    image: ""
   }
 ];
