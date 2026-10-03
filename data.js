@@ -1601,5 +1601,23 @@ const messages = [
     mood: "",
     text: "I am sorry that notes have been lacking the last couple days. I got really distracted with school which is no excuse because you are insanely important to me and a serious priority in my life. I miss you everyday :) I love you Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-10-01",
+    mood: "",
+    text: "I am so excited to come to Nashville and see you finally. I have missed u so much since you left and I want to see you again :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-10-02",
+    mood: "",
+    text: "I have been exhausted recently and I have no idea why. But talking to you has been keeping me going and I am so grateful to have someone like that in my life :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-10-03",
+    mood: "",
+    text: "I know last night wasn't a good argument or situation. I am gonna give you the space you want, I am so sorry that this happened. I don't want to lose you over this. I hope we can move past this Genesis :) I love you Genesis <3",
+    image: ""
   }
 ];
