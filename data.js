@@ -1619,5 +1619,17 @@ const messages = [
     mood: "",
     text: "I know last night wasn't a good argument or situation. I am gonna give you the space you want, I am so sorry that this happened. I don't want to lose you over this. I hope we can move past this Genesis :) I love you Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-10-04",
+    mood: "",
+    text: "I LOVE YOU SO MUCH!!!! You are the most amazing girl in the world and I cannot WAIT to see you this weekend :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-10-05",
+    mood: "",
+    text: "I can't wait to see you this weekend and I am so excited to go to the game (if you can get me a ticket) :) I love you Genesis <3",
+    image: ""
   }
 ];
