@@ -1631,5 +1631,47 @@ const messages = [
     mood: "",
     text: "I can't wait to see you this weekend and I am so excited to go to the game (if you can get me a ticket) :) I love you Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-10-06",
+    mood: "",
+    text: "You are so beautiful and I love seeing you, it genuinely just fills me with serotonin :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-10-07",
+    mood: "",
+    text: "You are amazing and I just want to be with you forever, we should just do that bc i said so :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-10-08",
+    mood: "",
+    text: "I say we stay together forever, we will do that :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-10-09",
+    mood: "",
+    text: "You are amazing and I am so excited to see you tomorrow!!! :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-10-10",
+    mood: "",
+    text: "Sorry for being exhausted all day, I prolly should've just went to sleep lol :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-10-11",
+    mood: "",
+    text: "I had so much fun with you this weekend! I will DEFINITELY be back for Halloween :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-10-12",
+    mood: "",
+    text: "I miss you already, I AM SUPERMAN :) I love you Genesis <3",
+    image: ""
   }
 ];
