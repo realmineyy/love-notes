@@ -1685,5 +1685,17 @@ const messages = [
     mood: "",
     text: "I am so sorry that I got back to Oxford and decided that being a dickhead was the right move. I have been so exhausted and I miss you and I've been applying to these internships and trying to keep making some money and it's just a lot. I am so sorry, you are so important to me and I hope you can forgive me :) I love you Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-10-15",
+    mood: "",
+    text: "I can't wait to see you again and I am missing you like crazy. Come back to me sooner rather than later :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-10-16",
+    mood: "",
+    text: "I LOVE YOU SO MUCH!! You are the most amazing, brilliant, and beautiful woman I have ever met and I can't wait to spend the rest of my life with you :) I love you Genesis <3",
+    image: ""
   }
 ];
