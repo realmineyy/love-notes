@@ -1697,5 +1697,35 @@ const messages = [
     mood: "",
     text: "I LOVE YOU SO MUCH!! You are the most amazing, brilliant, and beautiful woman I have ever met and I can't wait to spend the rest of my life with you :) I love you Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-10-17",
+    mood: "",
+    text: "I can't wait to see you next weekend! I have missed you so much since I left Nashville :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-10-18",
+    mood: "",
+    text: "You are the most amazing and talented woman in the world and, one day, I WILL make you my wife :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-10-19",
+    mood: "",
+    text: "I was thinking the other day about saying "my wife said this" or "my wife said that" and so now I have started referring to you as "the wife" which feels so good to say :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-10-20",
+    mood: "",
+    text: "I can't wait to marry you. Sorry, it's just been on the brain recently and I just want it to happen sooner rather than later :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-10-21",
+    mood: "",
+    text: "I can't wait to see you this weekend. Sorry that it was Oct. 16 for so long, I will be more on top of this from now on! :) I love you Genesis <3",
+    image: ""
   }
 ];
