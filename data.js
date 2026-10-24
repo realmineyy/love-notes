@@ -1727,5 +1727,17 @@ const messages = [
     mood: "",
     text: "I can't wait to see you this weekend. Sorry that it was Oct. 16 for so long, I will be more on top of this from now on! :) I love you Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-10-22",
+    mood: "",
+    text: "I am so excited to see you this weekend! I can't wait to see you again, Ive missed you :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-10-23",
+    mood: "",
+    text: "I had so much fun with you tonight! I can't wait to see you for Halloween! I'm still unsure if I am wearing kackis or not :) I love you Genesis <3",
+    image: ""
   }
 ];
