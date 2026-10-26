@@ -1713,7 +1713,7 @@ const messages = [
   {
     date: "2026-10-19",
     mood: "",
-    text: "I was thinking the other day about saying "my wife said this" or "my wife said that" and so now I have started referring to you as "the wife" which feels so good to say :) I love you Genesis <3",
+    text: "I was thinking the other day about saying 'my wife said this' or 'my wife said that' and so now I have started referring to you as 'the wife' which feels so good to say :) I love you Genesis <3",
     image: ""
   },
   {
@@ -1738,6 +1738,18 @@ const messages = [
     date: "2026-10-23",
     mood: "",
     text: "I had so much fun with you tonight! I can't wait to see you for Halloween! I'm still unsure if I am wearing kackis or not :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-10-24",
+    mood: "",
+    text: "I am so excited to see you for Halloween! I hope we have an amazing weekend together! :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-10-25",
+    mood: "",
+    text: "Welp, it's official, i miss you again. This sucks like actually (even tho we're only friends lol) :) I love you Genesis <3",
     image: ""
   }
 ];
