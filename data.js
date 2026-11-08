@@ -1793,5 +1793,47 @@ const messages = [
     mood: "",
     text: "Welp, I am back in Mississippi and i hate being without you. I miss you so much i might actually cry :) I love you Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-11-02",
+    mood: "",
+    text: "Back to class and all I can think about is you. Thanksgiving needs to hurry up :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-11-03",
+    mood: "",
+    text: "You are the most beautiful girl in the world and it's lowkey not even close :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-11-04",
+    mood: "",
+    text: "I am so proud of you for working your ass off at Vanderbilt. Smartest girl in the world fr :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-11-05",
+    mood: "",
+    text: "I say we just skip straight to Thanksgiving. I don't make the rules but I should :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-11-06",
+    mood: "",
+    text: "Another weekend without you, which is just rude ngl. I miss you tons :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-11-07",
+    mood: "",
+    text: "Still calling you 'the wife' btw, and it still feels so good to say :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-11-08",
+    mood: "",
+    text: "Less than 3 weeks until Thanksgiving! I am already being so impatient about it :) I love you Genesis <3",
+    image: ""
   }
 ];
