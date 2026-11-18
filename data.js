@@ -1835,5 +1835,65 @@ const messages = [
     mood: "",
     text: "Less than 3 weeks until Thanksgiving! I am already being so impatient about it :) I love you Genesis <3",
     image: ""
+  },
+  {
+    date: "2026-11-09",
+    mood: "",
+    text: "Monday again and the only thing getting me through it is talking to you. Thanksgiving can't come fast enough :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-11-10",
+    mood: "",
+    text: "You are the smartest, prettiest, most amazing girl in the world and I still have no idea how I pulled that off :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-11-11",
+    mood: "",
+    text: "Was thinking about Lake Como again today. Just so you know, that's still the plan and I'm not letting it go :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-11-12",
+    mood: "",
+    text: "I am so proud of how hard you've been grinding at Vanderbilt. Don't forget to take a break sometimes, even the smartest girl in the world needs a nap :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-11-13",
+    mood: "",
+    text: "Happy Friday the 13th! Nothing scary about today except how much I miss you fr :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-11-14",
+    mood: "",
+    text: "Another weekend without you. Still rude, still not a fan, still filing a complaint :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-11-15",
+    mood: "",
+    text: "14 months with you today. I'd do every single one of them all over again and I can't wait for all the ones still coming :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-11-16",
+    mood: "",
+    text: "10 DAYS UNTIL THANKSGIVING! The countdown is officially on and you can't stop me :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-11-17",
+    mood: "",
+    text: "9 days left! I'm being so impatient about it ngl, I just want to see you already :) I love you Genesis <3",
+    image: ""
+  },
+  {
+    date: "2026-11-18",
+    mood: "",
+    text: "8 DAYS! Also sorry the notes were stuck on the 8th for a minute, I'm all caught up now and I'm not falling behind again. You deserve better than that :) I love you Genesis <3",
+    image: ""
   }
 ];
